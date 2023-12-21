@@ -10,8 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.0.3",
     "framer-motion": "^7.6.7",
     "next": "13.0.3",
+    "next-intl": "^3.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

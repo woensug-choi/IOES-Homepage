@@ -30,8 +30,8 @@ const Navbar = () => (
         className="w-[24px] h-[24px] object-contain"
       />
 
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white ">
-        METAVERSUS
+      <h2 className="font-extrabold font-noto text-[24px] leading-[30px] text-white ">
+        Lab. IOES
       </h2>
       <Image
         src={menu}

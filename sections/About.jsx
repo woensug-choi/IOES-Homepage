@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import { TypingText } from "../components";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import {useTranslations} from 'next-intl';
 
-const About = () => (
+function About () {
+const t = useTranslations('About');
+ return (
   <section className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
@@ -20,7 +23,9 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[10px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white "
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
+        <span>{t('title')}</span>
+        <br />
+        <span className="font-extrabold text-white">Metaverse</span> 안녕하세요. 반가워요 ㅎㅎ is a new
         thing in the future, where you can enjoy the virtual world by feeling
         like it's really real, you can feel what you feel in this metaverse
         world, because this is really the{" "}
@@ -44,5 +49,6 @@ const About = () => (
     </motion.div>
   </section>
 );
+}
 
 export default About;

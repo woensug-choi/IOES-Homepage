@@ -9,6 +9,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        noto: ['var(--font-noto)'],
+        nanum: ['var(--font-nanum)'],
+      },
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
