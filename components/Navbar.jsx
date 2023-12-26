@@ -43,11 +43,11 @@ function Navbar() {
         className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:text-xs items-center max-sm:ml-[-10px] max-sm:gap-1 z-50`}
       >
         {navOpen ? (
-          <>
+          <div className="flex justify-start">
             <button onClick={() => setNavOpen(!navOpen)}>
-              <ChevronRight className="w-[24px] h-[24px] object-contain text-white/80" />
+              <ChevronRight className="w-[24px] h-[24px] object-contain text-white/80 max-sm:ml-3" />
             </button>
-            <div className="text-white/40 flex flex-row gap-x-4">
+            <div className="text-white/40 flex max-sm:grid max-sm:grid-cols-3 max-sm:ml-5 max-sm:gap-y-2 flex-row gap-x-4">
               <a href="#explore" onClick={() => setNavOpen(!navOpen)}>
                 <div className="z-50">{t("Research")}</div>
               </a>
@@ -75,11 +75,11 @@ function Navbar() {
               </a>
               </div>
             </div>
-          </>
+          </div>
         ) : (
           <>
             <button onClick={() => setNavOpen(!navOpen)}>
-              <ChevronDown className="w-[24px] h-[24px] object-contain text-white/80" />
+              <ChevronDown className="w-[24px] h-[24px] object-contain text-white/80 max-sm:ml-3" />
             </button>
           </>
         )}
