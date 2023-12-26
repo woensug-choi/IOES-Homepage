@@ -15,6 +15,8 @@ import { ChevronRight, ChevronDown } from "lucide-react";
 import React, { useRef, useEffect, useCallback } from "react";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 
+import { US, KR, JP } from 'country-flag-icons/react/3x2'
+
 function Navbar() {
   const t = useTranslations("Navbar");
   const pathname = usePathname();
@@ -38,7 +40,7 @@ function Navbar() {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:gap-2 z-50`}
+        className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:text-[12px] items-center max-sm:ml-[-10px] max-sm:gap-1 z-50`}
       >
         {navOpen ? (
           <>
@@ -47,20 +49,31 @@ function Navbar() {
             </button>
             <div className="text-white/40 flex flex-row gap-x-4">
               <a href="#explore" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50">Research</div>
+                <div className="z-50">{t("Research")}</div>
               </a>
               <a href="#advisor" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50">Advisor</div>
+                <div className="z-50">{t("Advisor")}</div>
               </a>
               <a href="#members" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50">Members</div>
+                <div className="z-50">{t("Members")}</div>
               </a>
               <a href="#classes" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50">Classes</div>
+                <div className="z-50">{t("Classes")}</div>
               </a>
               <a href="#contact" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50">Contact</div>
+                <div className="z-50">{t("Contact")}</div>
               </a>
+              <div className="flex flex-row ml-2">
+              <a href="/en" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50"><US className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+              </a>
+              <a href="/jp" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50"><JP className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+              </a>
+              <a href="/ko" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50"><KR className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+              </a>
+              </div>
             </div>
           </>
         ) : (
