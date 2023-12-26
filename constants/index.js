@@ -6,6 +6,7 @@ import Planet_5 from "../public/planet-05.png";
 import Planet_6 from "../public/planet-06.png";
 import Planet_7 from "../public/planet-07.png";
 import Planet_8 from "../public/planet-08.png";
+import Developer_1 from "../public/Developer_1.gif";
 import vrpano from "../public/vrpano.svg";
 import headset from "../public/headset.svg";
 import twitter from "../public/twitter.svg";
@@ -17,28 +18,31 @@ export const exploreWorlds = [
   {
     id: "world-1",
     imgUrl: Planet_1,
-    title: "The Hogwarts",
+    title: "Research_1",
+    tags: "Research_1_tags",
+    category: "Research",
   },
   {
     id: "world-2",
     imgUrl: Planet_2,
-    title: "The Upside Down",
+    title: "Research_2",
+    tags: "Research_2_tags",
+    category: "Research",
   },
   {
     id: "world-3",
     imgUrl: Planet_3,
-    title: "Kadirojo Permai",
+    title: "Developer_1",
+    tags: "Developer_1_tags",
+    category: "Developer",
   },
   {
     id: "world-4",
     imgUrl: Planet_4,
-    title: "Paradise Island",
-  },
-  {
-    id: "world-5",
-    imgUrl: Planet_5,
-    title: "Hawkins Labs",
-  },
+    title: "Developer_2",
+    tags: "Developer_2_tags",
+    category: "Developer",
+  }
 ];
 
 export const startingFeatures = [
@@ -59,27 +63,6 @@ export const newFeatures = [
     title: "More realistic",
     subtitle:
       "In the latest update, your eyes are narrow, making the world more realistic than ever",
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: Planet_6,
-    title: "The launch of the Metaverse makes Elon musk ketar-ketir",
-    subtitle:
-      "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
-  },
-  {
-    imgUrl: Planet_7,
-    title: "7 tips to easily master the madness of the Metaverse",
-    subtitle:
-      "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
-  },
-  {
-    imgUrl: Planet_8,
-    title: "With one platform you can explore the whole world virtually",
-    subtitle:
-      "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
   },
 ];
 

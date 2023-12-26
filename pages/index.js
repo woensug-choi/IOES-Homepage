@@ -3,10 +3,10 @@ import {
   About,
   Explore,
   Feedback,
-  GetStarted,
+  Advisor,
   Hero,
-  Insights,
-  WhatsNew,
+  Classes,
+  Members,
   World,
 } from "../sections";
 
@@ -28,13 +28,13 @@ const Home = () => (
       <Explore />
     </div>
     <div className="relative">
-      <GetStarted />
+      <Advisor />
       <div className="gradient-04 z-10" />
-      <WhatsNew />
+      <Members />
     </div>
-    <World />
+    {/* <World /> */}
     <div className="relative">
-      <Insights />
+      <Classes />
       <div className="gradient-04 z-0" />
       <Feedback />
     </div>

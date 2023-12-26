@@ -1,5 +1,63 @@
 {
+  "Navbar": {
+    "title": "지능형해양공학시스템연구실",
+    "Hero": "Hero"
+  },
   "About": {
-    "title": "우리는 누구인가?!"
+    "typingtext": "| About IOES Lab.",
+    "about": " [이오스] 에 오신 것을 환영합니다. 저희 연구실은 기술혁신을 통해서 바다를 탐험하는 꿈의 장소입니다. 세상을 표현하는 수학물리모델과 뛰어난 컴퓨터의 계산력, 인공지능과 첨단기술의 힘을 이용해, 해양 세계의 다양한 문제들의 창의적인 해결책을 고민합니다. 미래 해양기술의 무한한 가능성을 함께 상상하고 풀어갑니다."
+  },
+  "Explore": {
+    "typingtext": "| Research Areas",
+    "title": "주요 연구분야",
+    "research": "연구자 코스",
+    "developer": "개발자 코스",
+    "learn_more": "더 알아보기",
+    "Research_1": "유동기인 진동소음",
+    "Research_1_tags": "#난류유동 #수중소음 #잠수함 #스텔스 #국방",
+    "Research_2": "유체구조연성 해석",
+    "Research_2_tags": "#CFD #OpenFOAM #유동진동 #조선소 #해양구조물",
+    "Developer_1": "ROS-Gazebo 프레임워크",
+    "Developer_1_tags": "#로봇 #개발자 #시뮬레이션 #물리엔진 #제작 #파이썬 #CUDA",
+    "Developer_2": "자율운항 알고리듬",
+    "Developer_2_tags": "#인공지능 #머신러닝 #딥러닝 #개발 #ChatGPT"
+  },
+  "Advisor": {
+    "typingtext": "| Principal Investigator",
+    "title": "Choi Woen-Sug"
+  },
+  "Members": {
+    "typingtext": "| Members",
+    "title": "Our Research Team",
+    "phd": "Ph.D. Candidates",
+    "master": "Master Candidates",
+    "undergraduate": "Undergraduate Students",
+    "alumni": "Alumni",
+    "TYK": "Tae-Yong Kim",
+    "TYK_mail": "tyk@kmou.ac.kr"
+  },
+  "Classes": {
+    "typingtext": "| Courses",
+    "title": "Course materials",
+    "Title_IntroNaval": "Introduction to Naval Architecture and Ocean Engineering",
+    "Explain_IntroNaval": "This course is designed to provide an overview of the naval architecture and ocean engineering. The course will cover the basic concepts of naval architecture and ocean engineering.",
+    "Title_Dynamics": "Dynamics",
+    "Explain_Dynamics": "This course is designed to provide an overview of the dynamics. The course will cover the basic concepts of dynamics, including the kinematics of particles, kinematics of rigid bodies, kinetics of particles, and kinetics of rigid bodies.",
+    "Title_VibrationEngineering": "Vibration Engineering",
+    "Explain_VibrationEngineering": "This course is designed to provide an overview of the vibration engineering. The course will cover the basic concepts of vibration engineering, including the single degree of freedom systems, multi degree of freedom systems, continuous systems, and nonlinear systems.",
+    "Title_RoboticsSimulation": "Robotics Simulation",
+    "Explain_RoboticsSimulation": "This course is designed to provide an overview of the robotics simulation. The course will cover the basic concepts of robotics simulation, including the kinematics, dynamics, and control of underwater robotics and its simulation in Python."
+  },
+  "Feedback": {
+    "title": "Join Us",
+    "JoinUs_1": "대학원 진학에 관심있으신 분들께,",
+    "JoinUs_2": "석박사 과정에 관심있으신 분은 너무 늦지 않게 준비하시기 바랍니다!",
+    "JoinUs_3": "정말 빠른 학생은 2학년 2학기부터 준비, 학부졸업 전 논문작성을 도전합니다. 성공적이면 해외대학으로도 도전 가능합니다",
+    "JoinUs_4": "빠른 경우 3학년 여름방학 즈음에 준비를 시작해 성공적인 석사졸업과 취업을 도전합니다.",
+    "JoinUs_5": "늦어도 4학년 여름방학 정도에 준비를 시작하는 것이 건강에 좋습니다 🥺"
+  },
+  "Footer": {
+    "ContactUs": "Contact IOES",
+    "MakeReservation": "상담 예약하기"
   }
 }

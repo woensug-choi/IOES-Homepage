@@ -1,7 +1,7 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    y: -50,
+    y: -10,
     transition: {
       type: 'spring',
       stiffness: 300,
@@ -109,7 +109,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
 export const planetVariants = (direction) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
-    rotate: 120,
+    rotate:  'left' ? -120 : 120,
   },
   show: {
     x: 0,

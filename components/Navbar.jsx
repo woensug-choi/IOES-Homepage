@@ -7,39 +7,72 @@ import { navVariants } from "../utils/motion";
 import search from "../public/search.svg";
 import menu from "../public/menu.svg";
 
-const Navbar = () => (
-  // NOTE we can declare tags with motion like this for whichever tag we want to animate
-  <nav className={`${styles.xPaddings} py-8 relative`}>
-    <motion.div
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="absolute w-[50%] inset-0 gradient-01"
-    />
+import { useTranslations } from "next-intl";
 
-    <motion.div
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-    >
-      <Image
-        src={search}
-        alt="search-Icon"
-        className="w-[24px] h-[24px] object-contain"
+import Sidebar from "../components/Sidebar";
+import { usePathname } from "next/navigation";
+import { ChevronRight, ChevronDown } from "lucide-react";
+import React, { useRef, useEffect, useCallback } from "react";
+import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
+
+function Navbar() {
+  const t = useTranslations("Navbar");
+  const pathname = usePathname();
+
+  const [navOpen, setNavOpen] = React.useState(false);
+
+  useEffect(() => {}, []);
+
+  return (
+    // NOTE we can declare tags with motion like this for whichever tag we want to animate
+    <nav className={`${styles.xPaddings} max-sm:py-2 py-8 relative`}>
+      <motion.div
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className="absolute w-[50%] inset-0 gradient-01"
       />
 
-      <h2 className="font-extrabold font-noto text-[24px] leading-[30px] text-white ">
-        Lab. IOES
-      </h2>
-      <Image
-        src={menu}
-        alt="menu-Icon"
-        className="w-[24px] h-[24px] object-contain"
-      />
-    </motion.div>
-  </nav>
-);
+      <motion.div
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+        className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:gap-2 z-50`}
+      >
+        {navOpen ? (
+          <>
+            <button onClick={() => setNavOpen(!navOpen)}>
+              <ChevronRight className="w-[24px] h-[24px] object-contain text-white/80" />
+            </button>
+            <div className="text-white/40 flex flex-row gap-x-4">
+              <a href="#explore" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50">Research</div>
+              </a>
+              <a href="#advisor" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50">Advisor</div>
+              </a>
+              <a href="#members" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50">Members</div>
+              </a>
+              <a href="#classes" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50">Classes</div>
+              </a>
+              <a href="#contact" onClick={() => setNavOpen(!navOpen)}>
+                <div className="z-50">Contact</div>
+              </a>
+            </div>
+          </>
+        ) : (
+          <>
+            <button onClick={() => setNavOpen(!navOpen)}>
+              <ChevronDown className="w-[24px] h-[24px] object-contain text-white/80" />
+            </button>
+          </>
+        )}
+      </motion.div>
+    </nav>
+  );
+}
 
 export default Navbar;

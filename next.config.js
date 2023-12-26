@@ -8,7 +8,7 @@ const nextConfig = {
     defaultLocale: 'ko',
     localeDetection: false,
   },
-  trailingSlash: true,
+  // trailingSlash: true,
 };
 
 module.exports = nextConfig;

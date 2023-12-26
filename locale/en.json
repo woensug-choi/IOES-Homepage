@@ -1,5 +1,24 @@
 {
+  "Navbar": {
+    "title": "Lab. IOES"
+  },
   "About": {
-    "title": "who are we?!"
+    "typingtext": "| About IOES Lab.",
+    "about": "is where the future of marine technology and innovation unfolds. Our team is at the forefront of designing and deploying advanced engineering solutions for the marine world, blending artificial intelligence with cutting-edge technology. Step into our vision as we explore the never ending possibilities of the ocean, all through a lens of innovation and research in power of engineering."
+  },
+  "Explore": {
+    "typingtext": "| Research Areas",
+    "title": "Recent Research Areas",
+    "research": "Researcher Track",
+    "developer": "Developer Track",
+    "learn_more": "Learn More",
+    "Research_1": "Flow-induced Noise and Vibration",
+    "Research_1_tags": "#Turbulent Flow #Underwater Acoustics #Submarine #Stealth",
+    "Research_2": "Fluid-Structure Interaction",
+    "Research_2_tags": "#CFD #OpenFOAM #Flow-Induced Vibration #Ship Building #Marine Structures",
+    "Developer_1": "ROS-Gazebo Framework",
+    "Developer_1_tags": "#Robotics #Developer #Simulation #Physics Engine #Field Test #Python #CUDA",
+    "Developer_2": "Autonomous Control Algorithms",
+    "Developer_2_tags": "#AI #ML #Developer #AUV #ChatGPT"
   }
 }

@@ -5,58 +5,80 @@ import { socials } from "../constants";
 import styles from "../styles";
 import { footerVariants } from "../utils/motion";
 import Image from "next/image";
+import Link from "next/link";
 import headset from "../public/headset.svg";
+import { useTranslations } from "next-intl";
+import { Hand, Mail } from "lucide-react";
+import KMOULogo from "../public/logo.jpg";
 
-const Footer = () => (
-  <motion.footer
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
-  >
-    <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Enter the Metaverse
-        </h4>
-        <button
-          type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-        >
-          <Image
-            src={headset}
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Enter Metaverse
-          </span>
-        </button>
+const Footer = () => {
+  const t = useTranslations("Footer");
 
-        <div className="flex flex-col">
-          <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <h4 className="font-extrabold text-[24px] text-white">METAVERUS</h4>
-            <p className="font-normal text-[14px] text-white opacity-50">
-              Copyright © 2021 - 2022 Metaversus. All rights reserved.
+  return (
+    <motion.footer
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} py-8 relative`}
+    >
+      <div className="footer-gradient" />
+      <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
+        <div className="flex items-center justify-between flex-wrap gap-5">
+          <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+            {t("ContactUs")}
+            <br />
+            <p className="flex w-fit text-normal text-sm text-white/80 text-right">
+              <Mail className="mr-2 w-5 h-5 ml-2" />
+              wschoi@kmou.ac.kr
             </p>
+          </h4>
+          <a
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ09hOt32FkPnZU7BmEctlD9noOdGBMldZbpLzfjtljZuJz-Ni1zsT_cMDtmpicZ_RwKDirLuRe4"
+            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
+          >
+            <Hand className="text-white object-contain" />
+            <span className="font-normal text-[16px] text-white">
+              {t("MakeReservation")}
+            </span>
+          </a>
 
-            <div className="flex gap-4">
-              {socials.map((social) => (
+          <div className="flex flex-col">
+            <div className="mb-[50px] h-[2px] bg-white opacity-10 w-full" />
+
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <h4 className="font-extrabold text-[24px] text-white">
+                Lab. IOES
+              </h4>
+              <Link
+                href="https://www.kmou.ac.kr"
+                type="button"
+              >
                 <Image
-                  key={social.name}
-                  src={social.url}
-                  alt={social.name}
-                  className="w-[24px] h-[24px] object-contain cursor-pointer"
+                  src={KMOULogo}
+                  alt="planet-09"
+                  placeholder="blur"
+                  className="w-[150px] p-0 first-letter:object-cover rounded-[20px]"
                 />
-              ))}
+              </Link>
+              <p className="font-normal text-[14px] text-white opacity-50">
+                Copyright © 2023 Lab. IOES. All rights reserved.
+              </p>
+
+              {/* <div className="flex gap-4">
+                {socials.map((social) => (
+                  <Image
+                    key={social.name}
+                    src={social.url}
+                    alt={social.name}
+                    className="w-[24px] h-[24px] object-contain cursor-pointer"
+                  />
+                ))}
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </motion.footer>
-);
+    </motion.footer>
+  );
+};
 export default Footer;

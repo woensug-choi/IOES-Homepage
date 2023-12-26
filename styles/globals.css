@@ -10,6 +10,14 @@
   scroll-behavior: smooth;
 }
 
+.shadow-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.05), 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.shadow-glow-strong {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.15), 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
@@ -22,15 +30,6 @@
     hsl(220deg 76% 51%) 100%
   );
   filter: blur(125px);
-}
-
-.hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
 }
 
 .gradient-02 {

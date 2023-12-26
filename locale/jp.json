@@ -1,5 +1,24 @@
 {
+  "Navbar": {
+    "title": "知能型海洋工学システム研究室"
+  },
   "About": {
-    "title": "我々は誰か?!"
+    "typingtext": "| About IOES Lab.",
+    "about": "[イオス] へようこそ。私たちの研究所は、技術革新を通じて海を探検する夢の場所です。世界を表現する数理物理モデルと優れたコンピュータの計算力、人工知能と先端技術の力を利用して、海洋世界の様々な問題に対する創造的な解決策を考えます。未来の海洋技術の無限の可能性を共に想像し、解き明かしていきましょう。"
+  },
+  "Explore": {
+    "typingtext": "| Research Areas",
+    "title": "主な研究分野",
+    "research": "研究者コース",
+    "developer": "プログラマーコース",
+    "learn_more": "詳しく見る",
+    "Research_1": "流体振動騒音",
+    "Research_1_tags": "#乱流騒音 #水中騒音 #潜水艦",
+    "Research_2": "流体構造連成解析",
+    "Research_2_tags": "#CFD #OpenFOAM #流体振動 #造船 #海洋構造物",
+    "Developer_1": "ROS-Gazebo フレームワーク",
+    "Developer_1_tags": "#ロボット #プログラマー #シミュレーション #物理エンジン #製作 #Python #CUDA",
+    "Developer_2": "自律航行アルゴリズム",
+    "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー #ChatGPT"
   }
 }
