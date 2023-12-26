@@ -4,12 +4,49 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
 import { TypingText, ExploreCard, TitleText } from "../components";
-import { exploreWorlds } from "../constants";
 import { useTranslations } from "next-intl";
+
+import Planet_1 from "../public/planet-01.png";
+import Planet_2 from "../public/planet-02.png";
+import Planet_3 from "../public/planet-03.png";
+import Planet_4 from "../public/planet-04.png";
 
 const Explore = () => {
   const t = useTranslations("Explore");
   const [activeCard, setActiveCard] = useState("world-2");
+
+
+  const exploreWorlds = [
+    {
+      id: "world-1",
+      imgUrl: Planet_1,
+      title: "Research_1",
+      tags: "Research_1_tags",
+      category: "Research",
+    },
+    {
+      id: "world-2",
+      imgUrl: Planet_2,
+      title: "Research_2",
+      tags: "Research_2_tags",
+      category: "Research",
+    },
+    {
+      id: "world-3",
+      imgUrl: Planet_3,
+      title: "Developer_1",
+      tags: "Developer_1_tags",
+      category: "Developer",
+    },
+    {
+      id: "world-4",
+      imgUrl: Planet_4,
+      title: "Developer_2",
+      tags: "Developer_2_tags",
+      category: "Developer",
+    }
+  ];
+
   return (
     <section className={`${styles.paddings}`} id="explore">
       <motion.div

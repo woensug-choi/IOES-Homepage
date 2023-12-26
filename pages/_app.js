@@ -3,6 +3,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 
 import localFont from '@next/font/local'
+import Script from 'next/script'
 
 const nanum = localFont({
   // src: './../font/NanumSquareNeo-Variable.woff2',
@@ -49,9 +50,8 @@ export default function ({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
-        <meta name="theme-color" content="#ffffff"/>
-      </Head>
-  
+        <meta name="theme-color" content="#1d2532"/>
+      </Head>  
       <main className={`${nanum.className}`}>
       <Component  {...pageProps} />
       </main>
