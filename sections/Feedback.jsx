@@ -37,19 +37,19 @@ const Feedback = () => {
           <div className="feedback-gradient" />
 
           <div>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-relaxed text-white">
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_1")}
             </p>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] leading-relaxed text-white">
-              {t("JoinUs_2")}
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
+              -{t("JoinUs_2")}
             </p>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_3")}
             </p>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_4")}
             </p>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_5")}
             </p>
           </div>

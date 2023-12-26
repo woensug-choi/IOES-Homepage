@@ -49,7 +49,7 @@ const Classes = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.05 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title={t("typingtext")} textStyles="text-center" />
