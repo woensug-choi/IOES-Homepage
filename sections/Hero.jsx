@@ -9,7 +9,7 @@ import cover from "../public/cover.png";
 import KMOU_Circle from "../public/KMOU_Circle.png";
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 mb-[-120px]`}>
+  <section className={`${styles.yPaddings} sm:pl-16 max-sm:mt-20 pl-6 mb-[-120px]`}>
     {/* this is a container div in which we can animate children elements */}
     <motion.div
       variants={staggerContainer}

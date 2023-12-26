@@ -25,12 +25,12 @@ const ExploreCard = ({
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
       } ${
         styles.flexCenter
-      } min-w-[170px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer `}
+      } min-w-[170px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer z-40`}
       onClick={() => handleClick(id)}
     >
       <Image
         src={imgUrl}
-        alt={title}
+        alt={`image-${id}`}
         placeholder="blur"
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
@@ -39,10 +39,10 @@ const ExploreCard = ({
           {t(title)}
         </h3>
       ) : (
-        <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
+        <div className="absolute bottom-0 p-8 max-sm:py-4 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
           <div className="flex grid-cols-2 justify-between">
               <p
-                className={`${styles.flexCenter} h-[60px] rounded-[15px] glassmorphism mb-[16px] text-[18px] leading-[20px] px-4`}
+                className={`${styles.flexCenter} h-[60px] max-sm:h-[40px] rounded-[15px] glassmorphism mb-[16px] max-sm:mb-2 text-[18px] leading-[20px] px-4`}
               >
                 {category === "Research" ? (
                   <span className="font-bold text-emerald-400">{t("research")}</span>
@@ -51,7 +51,7 @@ const ExploreCard = ({
                 )}
               </p>
           </div>
-          <h2 className="mt-[24px] font-bold sm:text-[32px] text-[24px] text-white ">
+          <h2 className="mt-[24px] max-sm:mt-[12px] font-bold sm:text-[32px] text-[24px] text-white ">
             {t(title)}
           </h2>
           <p className="font-normal text-[16px] leading-[20px] text-white/80">

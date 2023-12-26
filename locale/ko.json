@@ -22,7 +22,7 @@
     "Research_1_tags": "#난류유동 #수중소음 #잠수함 #스텔스 #국방",
     "Research_2": "유체구조연성 해석",
     "Research_2_tags": "#CFD #OpenFOAM #유동진동 #조선소 #해양구조물",
-    "Developer_1": "ROS-Gazebo 프레임워크",
+    "Developer_1": "ROS-Gazebo",
     "Developer_1_tags": "#로봇 #개발자 #시뮬레이션 #물리엔진 #제작 #파이썬 #CUDA",
     "Developer_2": "자율운항 알고리듬",
     "Developer_2_tags": "#인공지능 #머신러닝 #딥러닝 #개발 #ChatGPT"

@@ -36,7 +36,7 @@ const Advisor = () => {
         >
           <Image
             src={prof}
-            alt="prof"
+            alt="profImage"
             placeholder="blur"
             className="w-[40%] h-[40%] md:w-[35%] md:h-[35%] lg:w-[30%] lg:h-[30%] xl:w-[20%] xl:h-[20%] object-contain rounded-full"
           />

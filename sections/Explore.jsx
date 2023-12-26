@@ -6,41 +6,41 @@ import { staggerContainer } from "../utils/motion";
 import { TypingText, ExploreCard, TitleText } from "../components";
 import { useTranslations } from "next-intl";
 
-import Planet_1 from "../public/planet-01.png";
-import Planet_2 from "../public/planet-02.png";
-import Planet_3 from "../public/planet-03.png";
-import Planet_4 from "../public/planet-04.png";
+import FSI from "../public/FSI.png";
+import AcousticsUnderwater from "../public/AcousticsUnderwater.png";
+import ROSGazebo from "../public/ROS-Gazebo.png";
+import AutonomousSim from "../public/AutonomousSim.png";
 
 const Explore = () => {
   const t = useTranslations("Explore");
-  const [activeCard, setActiveCard] = useState("world-2");
+  const [activeCard, setActiveCard] = useState("AcousticsUnderwater");
 
 
   const exploreWorlds = [
     {
-      id: "world-1",
-      imgUrl: Planet_1,
+      id: "AcousticsUnderwater",
+      imgUrl: AcousticsUnderwater,
       title: "Research_1",
       tags: "Research_1_tags",
       category: "Research",
     },
     {
-      id: "world-2",
-      imgUrl: Planet_2,
+      id: "FSI",
+      imgUrl: FSI,
       title: "Research_2",
       tags: "Research_2_tags",
       category: "Research",
     },
     {
-      id: "world-3",
-      imgUrl: Planet_3,
+      id: "ROSGazebo",
+      imgUrl: ROSGazebo,
       title: "Developer_1",
       tags: "Developer_1_tags",
       category: "Developer",
     },
     {
-      id: "world-4",
-      imgUrl: Planet_4,
+      id: "AutonomousSim",
+      imgUrl: AutonomousSim,
       title: "Developer_2",
       tags: "Developer_2_tags",
       category: "Developer",
@@ -48,7 +48,7 @@ const Explore = () => {
   ];
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`${styles.paddings} mt-20`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

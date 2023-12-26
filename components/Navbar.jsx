@@ -40,7 +40,7 @@ function Navbar() {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:text-[12px] items-center max-sm:ml-[-10px] max-sm:gap-1 z-50`}
+        className={`${styles.innerWidth} fixed mx-auto flex flex-row gap-8 max-sm:text-xs items-center max-sm:ml-[-10px] max-sm:gap-1 z-50`}
       >
         {navOpen ? (
           <>

@@ -41,7 +41,7 @@ const Feedback = () => {
               {t("JoinUs_1")}
             </p>
             <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
-              -{t("JoinUs_2")}
+              {t("JoinUs_2")}
             </p>
             <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_3")}
