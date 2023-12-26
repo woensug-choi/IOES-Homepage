@@ -1,6 +1,12 @@
 {
   "Navbar": {
-    "title": "知能型海洋工学システム研究室"
+    "title": "知能型海洋工学システム研究室",
+    "Hero": "Hero",
+    "Research": "研究分野",
+    "Advisor": "指導教授",
+    "Members": "メンバー",
+    "Classes": "授業",
+    "Contact": "連絡先"
   },
   "About": {
     "typingtext": "| About IOES Lab.",
@@ -20,5 +26,43 @@
     "Developer_1_tags": "#ロボット #プログラマー #シミュレーション #物理エンジン #製作 #Python #CUDA",
     "Developer_2": "自律航行アルゴリズム",
     "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー #ChatGPT"
+  },
+  "Advisor": {
+    "typingtext": "| Principal Investigator",
+    "title": "Choi Woen-Sug"
+  },
+  "Members": {
+    "typingtext": "| Members",
+    "title": "研究室メンバー",
+    "phd": "博士課程",
+    "master": "修士課程",
+    "undergraduate": "学部研究生",
+    "alumni": "卒業生",
+    "TYK": "テヨン キム",
+    "TYK_mail": "yncity@naver.com"
+  },
+  "Classes": {
+    "typingtext": "| Courses",
+    "title": "授業資料",
+    "Title_IntroNaval": "造船海洋工学概論",
+    "Explain_IntroNaval": "本授業は造船海洋工学の概論を提供するために設計されました。本授業は造船海洋工学の基本的な概念を扱うでしょう。",
+    "Title_Dynamics": "動力学",
+    "Explain_Dynamics": "本授業は動力学の概論を提供するために設計されました。本授業は粒子の運動学、剛体の運動学、粒子の運動力学、剛体の運動力学を扱うでしょう。",
+    "Title_VibrationEngineering": "振動工学",
+    "Explain_VibrationEngineering": "本授業は振動工学の概論を提供するために設計されました。本授業は単自由度系の運動系、多自由度系の運動系、連続系、非線形系を扱うでしょう。",
+    "Title_RoboticsSimulation": "海洋ロボット工学",
+    "Explain_RoboticsSimulation": "本授業は海洋ロボット工学の概論を提供するために設計されました。本授業は海洋ロボットの運動学、海洋ロボットの運動力学、海洋ロボットの制御とPythonを用いたシミュレーションを扱うでしょう。"
+  },
+  "Feedback": {
+    "title": "Join Us",
+    "JoinUs_1": "大学院進学に興味がある方へ、",
+    "JoinUs_2": "大学院進学は、できるだけ早く準備することをお勧めします！",
+    "JoinUs_3": "本当に早い学生は、2年2学期から準備を始め、学部卒業前に論文作成に挑戦します。成功すれば海外大学にも挑戦できます。",
+    "JoinUs_4": "早い場合は、3年夏休み頃から準備を始め、修士課程の卒業と就職に挑戦します。",
+    "JoinUs_5": "遅くとも4年夏休み頃から準備を始めることをお勧めします 🥺"
+  },
+  "Footer": {
+    "ContactUs": "Contact IOES",
+    "MakeReservation": "相談予約する"
   }
 }

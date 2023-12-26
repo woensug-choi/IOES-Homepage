@@ -9,7 +9,7 @@ import Link from "next/link";
 import headset from "../public/headset.svg";
 import { useTranslations } from "next-intl";
 import { Hand, Mail } from "lucide-react";
-import KMOULogo from "../public/logo.jpg";
+import KMOULogo from "../public/logo.png";
 
 const Footer = () => {
   const t = useTranslations("Footer");

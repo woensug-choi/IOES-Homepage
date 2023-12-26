@@ -1,6 +1,12 @@
 {
   "Navbar": {
-    "title": "Lab. IOES"
+    "title": "Lab. IOES",
+    "Hero": "Hero",
+    "Research": "Research",
+    "Advisor": "Advisor",
+    "Members": "Members",
+    "Classes": "Classes",
+    "Contact": "Contact"
   },
   "About": {
     "typingtext": "| About IOES Lab.",
@@ -20,5 +26,43 @@
     "Developer_1_tags": "#Robotics #Developer #Simulation #Physics Engine #Field Test #Python #CUDA",
     "Developer_2": "Autonomous Control Algorithms",
     "Developer_2_tags": "#AI #ML #Developer #AUV #ChatGPT"
+  },
+  "Advisor": {
+    "typingtext": "| Principal Investigator",
+    "title": "Choi Woen-Sug"
+  },
+  "Members": {
+    "typingtext": "| Members",
+    "title": "Our Research Team",
+    "phd": "Ph.D. Candidates",
+    "master": "Master Candidates",
+    "undergraduate": "Undergraduate Students",
+    "alumni": "Alumni",
+    "TYK": "Tae-Yeon Kim",
+    "TYK_mail": "yncity@naver.com"
+  },
+  "Classes": {
+    "typingtext": "| Courses",
+    "title": "Course materials",
+    "Title_IntroNaval": "Introduction to Naval Architecture and Ocean Engineering",
+    "Explain_IntroNaval": "This course is designed to provide an overview of the naval architecture and ocean engineering. The course will cover the basic concepts of naval architecture and ocean engineering.",
+    "Title_Dynamics": "Dynamics",
+    "Explain_Dynamics": "This course is designed to provide an overview of the dynamics. The course will cover the basic concepts of dynamics, including the kinematics of particles, kinematics of rigid bodies, kinetics of particles, and kinetics of rigid bodies.",
+    "Title_VibrationEngineering": "Vibration Engineering",
+    "Explain_VibrationEngineering": "This course is designed to provide an overview of the vibration engineering. The course will cover the basic concepts of vibration engineering, including the single degree of freedom systems, multi degree of freedom systems, continuous systems, and nonlinear systems.",
+    "Title_RoboticsSimulation": "Robotics Simulation",
+    "Explain_RoboticsSimulation": "This course is designed to provide an overview of the robotics simulation. The course will cover the basic concepts of robotics simulation, including the kinematics, dynamics, and control of underwater robotics and its simulation in Python."
+  },
+  "Feedback": {
+    "title": "Join Us",
+    "JoinUs_1": "For those who are interested to join us,",
+    "JoinUs_2": "If interested for graduate school, please prepare ahead!",
+    "JoinUs_3": "Those who are really fast, preparation starts at 2nd semester of second year to challenge writing a thesis before graduation. If successful, you can also challenge overseas universities.",
+    "JoinUs_4": "In the case of fast, you start preparing around the summer vacation of the third year and challenge for successful master's degree and employment.",
+    "JoinUs_5": "It is good for your health to start preparing at least around the summer vacation of the fourth year 🥺"
+  },
+  "Footer": {
+    "ContactUs": "Contact IOES",
+    "MakeReservation": "Make Reservation"
   }
 }
