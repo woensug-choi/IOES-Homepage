@@ -25,7 +25,9 @@
     "Developer_1": "ROS-Gazebo フレームワーク",
     "Developer_1_tags": "#ロボット #プログラマー #シミュレーション #物理エンジン #製作 #Python #CUDA",
     "Developer_2": "自律航行アルゴリズム",
-    "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー #ChatGPT"
+    "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー #ChatGPT",
+    "Developer_3": "海洋仮想環境構築",
+    "Developer_3_tags": "#仮想環境  #スマート港 #4次産業革命 #メタバース #ゲームエンジン"
   },
   "Advisor": {
     "typingtext": "| Principal Investigator",
