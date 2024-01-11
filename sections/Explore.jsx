@@ -10,26 +10,19 @@ import FSI from "../public/FSI.png";
 import AcousticsUnderwater from "../public/AcousticsUnderwater.png";
 import ROSGazebo from "../public/ROS-Gazebo.png";
 import AutonomousSim from "../public/AutonomousSim.png";
+import VirtualWorld from "../public/cesium_omniverse.avif";
 
 const Explore = () => {
   const t = useTranslations("Explore");
-  const [activeCard, setActiveCard] = useState("AcousticsUnderwater");
-
+  const [activeCard, setActiveCard] = useState("VirtualWorld");
 
   const exploreWorlds = [
     {
-      id: "AcousticsUnderwater",
-      imgUrl: AcousticsUnderwater,
-      title: "Research_1",
-      tags: "Research_1_tags",
-      category: "Research",
-    },
-    {
-      id: "FSI",
-      imgUrl: FSI,
-      title: "Research_2",
-      tags: "Research_2_tags",
-      category: "Research",
+      id: "VirtualWorld",
+      imgUrl: VirtualWorld,
+      title: "Developer_3",
+      tags: "Developer_3_tags",
+      category: "Developer",
     },
     {
       id: "ROSGazebo",
@@ -44,7 +37,21 @@ const Explore = () => {
       title: "Developer_2",
       tags: "Developer_2_tags",
       category: "Developer",
-    }
+    },
+    {
+      id: "AcousticsUnderwater",
+      imgUrl: AcousticsUnderwater,
+      title: "Research_1",
+      tags: "Research_1_tags",
+      category: "Research",
+    },
+    {
+      id: "FSI",
+      imgUrl: FSI,
+      title: "Research_2",
+      tags: "Research_2_tags",
+      category: "Research",
+    },
   ];
 
   return (
