@@ -39,9 +39,12 @@
     "phd": "Ph.D. Candidates",
     "master": "Master Candidates",
     "undergraduate": "Undergraduate Students",
+    "intern": "Inturn",
     "alumni": "Alumni",
     "TYK": "Tae-Yeon Kim",
-    "TYK_mail": "yncity@naver.com"
+    "TYK_mail": "yncity@naver.com",
+    "LUS": "Useong Lee",
+    "LUS_mail": "autoship09@gmail.com"
   },
   "Classes": {
     "typingtext": "| Courses",

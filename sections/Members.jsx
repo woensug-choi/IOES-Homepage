@@ -12,6 +12,52 @@ import { Users, Egg, Bird, PersonStanding, GraduationCap } from "lucide-react";
 
 import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
+import LUS from "../public/LUS.jpeg";
+
+function Person(src, alt, type, name, email) {
+  const t = useTranslations("Members");
+  return (
+    <div className="flex-1 flex flex-col">
+      <div className={`${styles.flexCenter} relative`}>
+        <Image
+          src={src}
+          alt={alt}
+          placeholder="blur"
+          className="w-[140px] h-[140px] md:w-[180px] md:h-[180px] object-contain rounded-full"
+        />
+        <div className="absolute center-0 bottom-[-15px] text-xs">
+          {/* <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#25618B]/80 rounded-[22px] gap-[12px]">
+                      <GraduationCap className="w-4 h-4" /> {t("phd")} a9a998
+                    </div> */}
+          <div
+            className={`rounded-[22px] ${
+              type === "intern"
+                ? "bg-[#a9a998]/80"
+                : type === "undergraduate"
+                ? "bg-[#a9a73f]/80"
+                : type === "master"
+                ? "bg-[#258b5a]/80"
+                : "bg-[#7141af]/80"
+            }`}
+          >
+            <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 gap-[12px]">
+              <PersonStanding className="w-6 h-6" /> {t(type)}
+            </div>
+          </div>
+          {/* <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#778b25]/80 rounded-[22px] gap-[12px]">
+                      <PersonStanding className="w-6 h-6" /> {t("undergraduate")}
+                    </div> */}
+        </div>
+      </div>
+      <h1 className="mt-[26px] font-bold text-center text-[24px] text-white leading-[30px]">
+        {name}
+      </h1>
+      <p className="flex-1 mt-1 font-normal text-center text-[12px] text-[#B0B0B0] leading-[32px]">
+        {email}
+      </p>
+    </div>
+  );
+}
 
 const Members = () => {
   const t = useTranslations("Members");
@@ -35,34 +81,8 @@ const Members = () => {
           {/* PHD */}
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
-              <div className="flex-1 flex flex-col">
-                <div className={`${styles.flexCenter} relative`}>
-                  <Image
-                    src={TYK}
-                    alt="TYK"
-                    placeholder="blur"
-                    className="w-[140px] h-[140px] md:w-[180px] md:h-[180px] object-contain rounded-full"
-                  />
-                  <div className="absolute center-0 bottom-[-15px] text-xs">
-                    {/* <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#25618B]/80 rounded-[22px] gap-[12px]">
-                      <GraduationCap className="w-4 h-4" /> {t("phd")}
-                    </div> */}
-                    <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#258b5a]/80 rounded-[22px] gap-[12px]">
-                      <PersonStanding className="w-6 h-6" /> {t("master")}
-                    </div>
-                    {/* <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#778b25]/80 rounded-[22px] gap-[12px]">
-                      <PersonStanding className="w-6 h-6" /> {t("undergraduate")}
-                    </div> */}
-                  </div>
-                </div>
-                <h1 className="mt-[26px] font-bold text-center text-[24px] text-white leading-[30px]">
-                  {t("TYK")}
-                </h1>
-                <p className="flex-1 mt-1 font-normal text-center text-[18px] text-[#B0B0B0] leading-[32px]">
-                  {t("TYK_mail")}
-                </p>
-              </div>
-
+              {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
+              {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))}
             </div>
           </motion.div>
 

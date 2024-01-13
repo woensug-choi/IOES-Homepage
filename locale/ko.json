@@ -39,9 +39,12 @@
     "phd": "박사과정",
     "master": "석사과정",
     "undergraduate": "학부연구생",
+    "intern": "단기인턴",
     "alumni": "졸업생",
     "TYK": "김태연",
-    "TYK_mail": "yncity@naver.com"
+    "TYK_mail": "yncity@naver.com",
+    "LUS": "이우성",
+    "LUS_mail": "autoship09@gmail.com"
   },
   "Classes": {
     "typingtext": "| Courses",

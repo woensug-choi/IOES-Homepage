@@ -39,9 +39,12 @@
     "phd": "博士課程",
     "master": "修士課程",
     "undergraduate": "学部研究生",
+    "intern": "インターン",
     "alumni": "卒業生",
     "TYK": "テヨン キム",
-    "TYK_mail": "yncity@naver.com"
+    "TYK_mail": "yncity@naver.com",
+    "LUS": "ウソン イ",
+    "LUS_mail": "autoship09@gmail.com"
   },
   "Classes": {
     "typingtext": "| Courses",
