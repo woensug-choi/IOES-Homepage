@@ -52,6 +52,9 @@ const Feedback = () => {
             <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-white">
               {t("JoinUs_5")}
             </p>
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[14px] leading-relaxed text-green-300">
+              {t("JoinUs_6")}
+            </p>
           </div>
         </motion.div>
 

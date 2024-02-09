@@ -16,6 +16,7 @@ const ExploreCard = ({
   index,
   active,
   handleClick,
+  link,
 }) => {
   const t = useTranslations("Explore");
   return (
@@ -41,15 +42,23 @@ const ExploreCard = ({
       ) : (
         <div className="absolute bottom-0 p-8 max-sm:py-4 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
           <div className="flex grid-cols-2 justify-between">
-              <p
-                className={`${styles.flexCenter} h-[60px] max-sm:h-[40px] rounded-[15px] glassmorphism mb-[16px] max-sm:mb-2 text-[18px] leading-[20px] px-4`}
-              >
-                {category === "Research" ? (
-                  <span className="font-bold text-emerald-400">{t("research")}</span>
-                ) : (
-                  <span className="font-bold text-amber-300">{t("developer")} </span>
-                )}
-              </p>
+            <p
+              className={`${styles.flexCenter} h-[60px] max-sm:h-[40px] rounded-[15px] glassmorphism mb-[16px] max-sm:mb-2 text-[18px] leading-[20px] px-4`}
+            >
+              {category === "Research" ? (
+                <span className="font-bold text-emerald-400">
+                  {t("research")}
+                </span>
+              ) : category === "Engineer" ? (
+                <span className="font-bold text-amber-300">
+                  {t("engineer")}{" "}
+                </span>
+              ) : (
+                <span className="font-bold text-purple-300">
+                  {t("developer")}{" "}
+                </span>
+              )}
+            </p>
           </div>
           <h2 className="mt-[24px] max-sm:mt-[12px] font-bold sm:text-[32px] text-[24px] text-white ">
             {t(title)}
@@ -57,8 +66,8 @@ const ExploreCard = ({
           <p className="font-normal text-[16px] leading-[20px] text-white/80">
             {t(tags)}
           </p>
-          <p className="font-normal mt-5 text-[16px] leading-[20px] text-white uppercase ">
-            {t("learn_more")}
+          <p className="font-normal mt-5 text-[16px] leading-[20px] text-white uppercase">
+            <a target="_blank" rel="noopener noreferrer" href={link}>{t("learn_more")}{" "}🔎</a>
           </p>
         </div>
       )}

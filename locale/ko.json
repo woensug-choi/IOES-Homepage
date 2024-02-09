@@ -16,16 +16,19 @@
     "typingtext": "| Research Areas",
     "title": "주요 연구분야",
     "research": "연구자 코스",
+    "engineer": "엔지니어 코스",
     "developer": "개발자 코스",
     "learn_more": "더 알아보기",
     "Research_1": "유동기인 진동소음",
     "Research_1_tags": "#난류유동 #수중소음 #잠수함 #스텔스 #국방",
     "Research_2": "유체구조연성 해석",
     "Research_2_tags": "#CFD #OpenFOAM #유동진동 #조선소 #해양구조물",
-    "Developer_1": "ROS-Gazebo 해양로봇",
+    "Developer_1": "해양로봇 시뮬레이터",
     "Developer_1_tags": "#로봇 #개발자 #시뮬레이션 #물리엔진 #제작 #파이썬 #CUDA",
     "Developer_2": "자율운항 알고리듬",
-    "Developer_2_tags": "#인공지능 #머신러닝 #딥러닝 #개발 #ChatGPT",
+    "Developer_2_tags": "#인공지능 #머신러닝 #딥러닝 #개발",
+    "FullStackDev": "풀스택 개발자",
+    "FullStackDev_tags": "#프론트엔드 #백엔드 #데브옵스 #개발자 #창업 #ChatGPT",
     "Developer_3": "해양 가상환경 구축",
     "Developer_3_tags": "#가상환경 #스마트항만 #4차산업혁명 #메타버스 #게임엔진"
   },
@@ -44,7 +47,11 @@
     "TYK": "김태연",
     "TYK_mail": "yncity@naver.com",
     "LUS": "이우성",
-    "LUS_mail": "autoship09@gmail.com"
+    "LUS_mail": "autoship09@gmail.com",
+    "Cand1": "그대",
+    "Cand1_mail": "맥북 지급",
+    "Cand2": "모집중",
+    "Cand2_mail": "자리 있음"
   },
   "Classes": {
     "typingtext": "| Courses",
@@ -56,7 +63,8 @@
     "Title_VibrationEngineering": "진동공학",
     "Explain_VibrationEngineering": "본 수업은 진동공학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 단자유도계의 운동체계, 다자유도계의 운동체계, 연속체계, 비선형체계를 다룰 것입니다.",
     "Title_RoboticsSimulation": "해양로봇공학",
-    "Explain_RoboticsSimulation": "본 수업은 해양로봇공학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 해양로봇의 운동학, 해양로봇의 운동역학, 해양로봇의 제어 및 파이썬을 이용한 시뮬레이션을 다룰 것입니다."
+    "Explain_RoboticsSimulation": "본 수업은 해양로봇공학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 해양로봇의 운동학, 해양로봇의 운동역학, 해양로봇의 제어 및 파이썬을 이용한 시뮬레이션을 다룰 것입니다.",
+    "To Class Materials": "수업자료 바로가기"
   },
   "Feedback": {
     "title": "Join Us",
@@ -64,7 +72,8 @@
     "JoinUs_2": "석박사 과정에 관심있으신 분은 너무 늦지 않게 준비하시기 바랍니다!",
     "JoinUs_3": "정말 빠른 학생은 2학년 2학기부터 준비, 학부졸업 전 논문작성을 도전합니다. 성공적이면 해외대학으로도 도전 가능합니다",
     "JoinUs_4": "빠른 경우 3학년 여름방학 즈음에 준비를 시작해 성공적인 석사졸업과 취업을 도전합니다.",
-    "JoinUs_5": "늦어도 4학년 여름방학 정도에 준비를 시작하는 것이 건강에 좋습니다 🥺"
+    "JoinUs_5": "늦어도 4학년 여름방학 정도에 준비를 시작하는 것이 건강에 좋습니다 🥺",
+    "JoinUs_6": "최소 연구소 취업을 목표로하는 연구자 코스, 실무중심의 엔지니어 코스, 즉각적 취업을 위한 개발자 코스로 나뉩니다. 상담은 언제든지 아래 '상담 예약하기'버튼으로!"
   },
   "Footer": {
     "ContactUs": "Contact IOES",

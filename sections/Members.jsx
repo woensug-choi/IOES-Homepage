@@ -13,6 +13,10 @@ import { Users, Egg, Bird, PersonStanding, GraduationCap } from "lucide-react";
 import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
 import LUS from "../public/LUS.jpeg";
+import Cand1 from "../public/people-04.jpg";
+import Cand2 from "../public/people-05.jpg";
+import Cand3 from "../public/people-06.png";
+import Cand4 from "../public/people-07.png";
 
 function Person(src, alt, type, name, email) {
   const t = useTranslations("Members");
@@ -83,6 +87,13 @@ const Members = () => {
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
               {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
               {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))}
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeIn("left", "tween", 0.4, 1)} className="mt-20">
+            <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
+              {Person(Cand2, "Cand1", "undergraduate", t("Cand1"), t("Cand1_mail"))}
+              {Person(Cand3, "Cand2", "undergraduate", t("Cand2"), t("Cand2_mail"))}
             </div>
           </motion.div>
 

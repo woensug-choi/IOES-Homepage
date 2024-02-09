@@ -16,16 +16,19 @@
     "typingtext": "| Research Areas",
     "title": "主な研究分野",
     "research": "研究者コース",
+    "engineer": "エンジニアコース",
     "developer": "プログラマーコース",
     "learn_more": "詳しく見る",
     "Research_1": "流体振動騒音",
     "Research_1_tags": "#乱流騒音 #水中騒音 #潜水艦",
     "Research_2": "流体構造連成解析",
     "Research_2_tags": "#CFD #OpenFOAM #流体振動 #造船 #海洋構造物",
-    "Developer_1": "ROS-Gazebo フレームワーク",
+    "Developer_1": "海洋ロボットシミュレータ",
     "Developer_1_tags": "#ロボット #プログラマー #シミュレーション #物理エンジン #製作 #Python #CUDA",
     "Developer_2": "自律航行アルゴリズム",
-    "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー #ChatGPT",
+    "Developer_2_tags": "#人工知能 #機械学習 #深層学習 #プログラマー",
+    "FullStackDev": "フルスタックプログラマー",
+    "FullStackDev_tags": "#フロントエンド #バックエンド #デブオプス #プログラマー #スタートアップ #ChatGPT",
     "Developer_3": "海洋仮想環境構築",
     "Developer_3_tags": "#仮想環境  #スマート港 #4次産業革命 #メタバース #ゲームエンジン"
   },
@@ -44,7 +47,11 @@
     "TYK": "テヨン キム",
     "TYK_mail": "yncity@naver.com",
     "LUS": "ウソン イ",
-    "LUS_mail": "autoship09@gmail.com"
+    "LUS_mail": "autoship09@gmail.com",
+    "Cand1": "あなた",
+    "Cand1_mail": "ポジションオープン",
+    "Cand2": "募集中",
+    "Cand2_mail": "ポジションオープン"
   },
   "Classes": {
     "typingtext": "| Courses",
@@ -56,7 +63,8 @@
     "Title_VibrationEngineering": "振動工学",
     "Explain_VibrationEngineering": "本授業は振動工学の概論を提供するために設計されました。本授業は単自由度系の運動系、多自由度系の運動系、連続系、非線形系を扱うでしょう。",
     "Title_RoboticsSimulation": "海洋ロボット工学",
-    "Explain_RoboticsSimulation": "本授業は海洋ロボット工学の概論を提供するために設計されました。本授業は海洋ロボットの運動学、海洋ロボットの運動力学、海洋ロボットの制御とPythonを用いたシミュレーションを扱うでしょう。"
+    "Explain_RoboticsSimulation": "本授業は海洋ロボット工学の概論を提供するために設計されました。本授業は海洋ロボットの運動学、海洋ロボットの運動力学、海洋ロボットの制御とPythonを用いたシミュレーションを扱うでしょう。",
+    "To Class Materials": "授業資料へ"
   },
   "Feedback": {
     "title": "Join Us",
@@ -64,7 +72,8 @@
     "JoinUs_2": "大学院進学は、できるだけ早く準備することをお勧めします！",
     "JoinUs_3": "本当に早い学生は、2年2学期から準備を始め、学部卒業前に論文作成に挑戦します。成功すれば海外大学にも挑戦できます。",
     "JoinUs_4": "早い場合は、3年夏休み頃から準備を始め、修士課程の卒業と就職に挑戦します。",
-    "JoinUs_5": "遅くとも4年夏休み頃から準備を始めることをお勧めします 🥺"
+    "JoinUs_5": "遅くとも4年夏休み頃から準備を始めることをお勧めします 🥺",
+    "JoinUs_6": "研究所の就職を目指す研究者コース、実務中心のエンジニアコース、即時就職を目指すプログラマーコースに分かれます。相談はいつでもお問い合わせください！"
   },
   "Footer": {
     "ContactUs": "Contact IOES",

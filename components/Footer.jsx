@@ -33,8 +33,8 @@ const Footer = () => {
             </p>
           </h4>
           <a
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ09hOt32FkPnZU7BmEctlD9noOdGBMldZbpLzfjtljZuJz-Ni1zsT_cMDtmpicZ_RwKDirLuRe4"
-            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
+            href="https://whattime.co.kr/woensug-choi/30min"
+            className="flex items-center h-fit py-4 px-6 bg-[#e953c6] rounded-[32px] gap-[12px]"
           >
             <Hand className="text-white object-contain" />
             <span className="font-normal text-[16px] text-white">
@@ -43,16 +43,14 @@ const Footer = () => {
           </a>
 
           <div className="flex flex-col">
+
             <div className="mb-[50px] h-[2px] bg-white opacity-10 w-full" />
 
             <div className="flex items-center justify-between flex-wrap gap-4">
               <h4 className="font-extrabold text-[24px] text-white">
                 Lab. IOES
               </h4>
-              <Link
-                href="https://www.kmou.ac.kr"
-                type="button"
-              >
+              <Link href="https://www.kmou.ac.kr" type="button">
                 <Image
                   src={KMOULogo}
                   alt="planet-09"
