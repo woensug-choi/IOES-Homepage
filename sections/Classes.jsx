@@ -21,25 +21,25 @@ const Classes = () => {
       imgUrl: IntroNaval,
       title: t("Title_IntroNaval"),
       subtitle: t("Explain_IntroNaval"),
-      url: "https://kmou.wschoi.com/c3ee7718ef2849a8a34d034ea16089ba"
+      url: "https://class.wschoi.com"
     },
     {
       imgUrl: Dynamics,
       title: t("Title_Dynamics"),
       subtitle: t("Explain_Dynamics"),
-      url: "https://kmou.wschoi.com/b6411ecab7ea46fa99ae5238170937a7"
+      url: "https://class.wschoi.com"
     },
     {
       imgUrl: VibrationEngineering,
       title: t("Title_VibrationEngineering"),
       subtitle: t("Explain_VibrationEngineering"),
-      url: "https://kmou.wschoi.com/59e10c8124cb497c80140db9a581dad5"
+      url: "https://class.wschoi.com"
     },
     {
       imgUrl: RoboticsSimulation,
       title: t("Title_RoboticsSimulation"),
       subtitle: t("Explain_RoboticsSimulation"),
-      url: "https://kmou.wschoi.com/7cf2cefe3cc343fb8133b6d5e6bbb6b0"
+      url: "https://class.wschoi.com"
     },
   ];
 
