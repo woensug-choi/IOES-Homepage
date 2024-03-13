@@ -51,6 +51,13 @@ export default function ({ Component, pageProps }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#1d2532"/>
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="IOES Lab." />
+        <meta
+          property="og:description"
+          content="IOES;이오스 지능형해양공학시스템연구실"
+        />
+        <meta property="og:image" content="/PREVIEW.png" />
       </Head>  
       <main className={`${nanum.className}`}>
       <Component  {...pageProps} />
