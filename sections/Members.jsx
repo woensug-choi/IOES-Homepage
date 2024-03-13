@@ -13,6 +13,7 @@ import { Users, Egg, Bird, PersonStanding, GraduationCap } from "lucide-react";
 import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
 import LUS from "../public/LUS.jpeg";
+import HJW from "../public/HJW.jpeg";
 import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
@@ -87,6 +88,7 @@ const Members = () => {
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
               {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
               {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))}
+              {Person(HJW, "HJW", "intern", t("HJW"), t("HJW_mail"))}
             </div>
           </motion.div>
 
