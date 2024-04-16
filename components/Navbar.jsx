@@ -78,9 +78,22 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <button onClick={() => setNavOpen(!navOpen)}>
-              <ChevronDown className="w-[24px] h-[24px] object-contain text-white/80 max-sm:ml-3" />
-            </button>
+              <div className="w-full flex flex-row justify-between">
+                <button onClick={() => setNavOpen(!navOpen)}>
+                  <ChevronDown className="w-[24px] h-[24px] object-contain text-white/80 max-sm:ml-3" />
+                </button>
+                <div className="flex flex-row mr-20">
+                  <a href="/en">
+                    <div className="z-50"><US className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                  </a>
+                  <a href="/jp">
+                    <div className="z-50"><JP className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                  </a>
+                  <a href="/ko">
+                    <div className="z-50"><KR className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                  </a>
+                </div>
+              </div>
           </>
         )}
       </motion.div>
