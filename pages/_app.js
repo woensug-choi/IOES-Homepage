@@ -58,6 +58,15 @@ export default function ({ Component, pageProps }) {
           content="IOES;이오스 지능형해양공학시스템연구실"
         />
         <meta property="og:image" content="/PREVIEW.png" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1139GLE368" />
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1139GLE368');
+          `}
+        </Script>
       </Head>  
       <main className={`${nanum.className}`}>
       <Component  {...pageProps} />
