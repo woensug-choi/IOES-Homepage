@@ -59,7 +59,7 @@ export default function ({ Component, pageProps }) {
         />
         <meta property="og:image" content="/PREVIEW.png" />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1139GLE368" />
-        <Script>
+        <Script id="google-analytics-script">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
