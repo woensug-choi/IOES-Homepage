@@ -4,6 +4,7 @@ import "../styles/globals.css";
 
 import localFont from '@next/font/local'
 import Script from 'next/script'
+import { Analytics } from "@vercel/analytics/react"
 
 const nanum = localFont({
   // src: './../font/NanumSquareNeo-Variable.woff2',
@@ -61,6 +62,7 @@ export default function ({ Component, pageProps }) {
       </Head>  
       <main className={`${nanum.className}`}>
       <Component  {...pageProps} />
+      <Analytics/>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1139GLE368" />
       <Script id="google-analytics-script">
         {`
