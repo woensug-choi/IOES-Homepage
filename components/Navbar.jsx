@@ -48,19 +48,19 @@ function Navbar() {
               <ChevronRight className="w-[24px] h-[24px] object-contain text-white/80 max-sm:ml-3" />
             </button>
             <div className="text-white/40 flex max-sm:grid max-sm:grid-cols-3 max-sm:ml-5 max-sm:gap-y-2 flex-row gap-x-4">
-              <a href="#explore" onClick={() => setNavOpen(!navOpen)}>
+              <a href="#explore">
                 <div className="z-50">{t("Research")}</div>
               </a>
-              <a href="#advisor" onClick={() => setNavOpen(!navOpen)}>
+              <a href="#advisor">
                 <div className="z-50">{t("Advisor")}</div>
               </a>
-              <a href="#members" onClick={() => setNavOpen(!navOpen)}>
+              <a href="#members">
                 <div className="z-50">{t("Members")}</div>
               </a>
-              <a href="#classes" onClick={() => setNavOpen(!navOpen)}>
+              <a href="#classes">
                 <div className="z-50">{t("Classes")}</div>
               </a>
-              <a href="#contact" onClick={() => setNavOpen(!navOpen)}>
+              <a href="#contact">
                 <div className="z-50">{t("Contact")}</div>
               </a>
               <div className="flex flex-row ml-2">

@@ -14,6 +14,7 @@ import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
 import LUS from "../public/LUS.jpeg";
 import HJW from "../public/HJW.jpeg";
+import KYS from "../public/KYS.jpeg";
 import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
@@ -88,14 +89,15 @@ const Members = () => {
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
               {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
               {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))}
-              {Person(HJW, "HJW", "intern", t("HJW"), t("HJW_mail"))}
+              {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
+              {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
             </div>
           </motion.div>
 
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)} className="mt-20">
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
               {Person(Cand2, "Cand1", "undergraduate", t("Cand1"), t("Cand1_mail"))}
-              {Person(Cand3, "Cand2", "undergraduate", t("Cand2"), t("Cand2_mail"))}
+              {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
             </div>
           </motion.div>
 
