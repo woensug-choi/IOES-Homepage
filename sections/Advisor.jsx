@@ -17,6 +17,7 @@ import {
   ScrollText,
   User,
   Github,
+  Workflow,
 } from "lucide-react";
 
 const Advisor = () => {
@@ -143,6 +144,40 @@ const Advisor = () => {
                   Institute of Engineering Research, Seoul National University,
                   Seoul, South Korea <br />
                   <span className="italic">Postdoctoral Senior Researcher</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-[31px] flex flex-col gap-[24px]">
+            <div className={`${styles.flexStart} flex-row`}>
+              <div
+                className={`${styles.flexCenter} min-w-[60px] h-[58px] mr-[-10px] rounded-[18px] bg-[#323f5d]`}
+              >
+                <p className="font-bold text-[20px] text-white">
+                  <Workflow />
+                </p>
+              </div>
+              <div className="flex-col">
+                <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
+                  Korean Society for Noise and Vibration Engineering
+                </p>
+                <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
+                  Jan. 2024 ~ Dec. 2024 <br />
+                  Naval Architecture and Ocean Engineering
+                  Division<br />
+                  <span className="italic">Director</span>
+                </p>
+                <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
+                Open Robotics (Google Summer of Codes)
+                </p>
+                <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
+                  May. 2024 ~ Nov. 2024 <br />
+                  Physics-based Sonar Simulation for Underwater Robotics <br />
+                  <span className="italic">
+                  Mentor
+                  </span>{" "}
+                  <br />
                 </p>
               </div>
             </div>
