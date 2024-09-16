@@ -9,6 +9,8 @@ import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 import { useTranslations } from "next-intl";
 import { TypingText, TitleText } from "../components";
 
+import Recruit from "./../sections/Recruit";
+
 const Feedback = () => {
   const t = useTranslations("Feedback");
 
@@ -23,6 +25,9 @@ const Feedback = () => {
       >
         <TitleText title={t("title")} textStyles="text-center mb-5" />
       </motion.div>
+      <div className="mb-10">
+        <Recruit />
+      </div>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

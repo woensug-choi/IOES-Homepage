@@ -57,6 +57,13 @@
     "Cand2": "Wanted",
     "Cand2_mail": "Position Open"
   },
+  "Recruit": {
+    "whattime_link": "https://whattime.co.kr/woensug-choi/30min23",
+    "title": "Graduate Positions Open (Full scholarships: Tuition + Stipends)!",
+    "content": "Exciting opportunity for aspiring scholars! We are now accepting applications for graduate positions with full scholarships (Tuition + Stipends). Don't miss this chance to advance your academic career.",
+    "Make Appointment" : "Make Appointment",
+    "Send Email": "Send Email"
+  },
   "Classes": {
     "typingtext": "| Courses",
     "title": "Course materials",
@@ -81,6 +88,7 @@
   },
   "Footer": {
     "ContactUs": "Contact IOES",
-    "MakeReservation": "Make Reservation"
+    "MakeReservation": "Make Reservation",
+    "whattime_link": "https://whattime.co.kr/woensug-choi/30min23"
   }
 }

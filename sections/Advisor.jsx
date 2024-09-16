@@ -16,13 +16,17 @@ import {
   Briefcase,
   ScrollText,
   User,
-} from 'lucide-react'
+  Github,
+} from "lucide-react";
 
 const Advisor = () => {
   const t = useTranslations("Advisor");
 
   return (
-    <section className={`${styles.paddings} relative z-10 lg:ml-[15%]`} id="advisor">
+    <section
+      className={`${styles.paddings} relative z-10 lg:ml-[15%]`}
+      id="advisor"
+    >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -54,7 +58,9 @@ const Advisor = () => {
               <div
                 className={`${styles.flexCenter} min-w-[60px] h-[58px] mr-[-10px] rounded-[18px] bg-[#323f5d]`}
               >
-                <p className="font-bold text-[20px] text-white"><GraduationCap /></p>
+                <p className="font-bold text-[20px] text-white">
+                  <GraduationCap />
+                </p>
               </div>
               <div className="flex-col">
                 <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
@@ -80,16 +86,21 @@ const Advisor = () => {
               <div
                 className={`${styles.flexCenter} min-w-[60px] h-[58px] mr-[-10px] rounded-[18px] bg-[#323f5d]`}
               >
-                <p className="font-bold text-[20px] text-white"><Award /></p>
+                <p className="font-bold text-[20px] text-white">
+                  <Award />
+                </p>
               </div>
               <div className="flex-col">
-              <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
-                NRC Research Associateship Award
-              </p>
-              <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
-                Jul. 2020 ~ Aug. 2022, The National Research Council of the National Academies, USA <br />
-                <span className="italic">Research Associateship Programs</span>
-              </p>
+                <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
+                  NRC Research Associateship Award
+                </p>
+                <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
+                  Jul. 2020 ~ Aug. 2022, The National Research Council of the
+                  National Academies, USA <br />
+                  <span className="italic">
+                    Research Associateship Programs
+                  </span>
+                </p>
               </div>
             </div>
           </div>
@@ -99,7 +110,9 @@ const Advisor = () => {
               <div
                 className={`${styles.flexCenter} min-w-[60px] h-[58px] mr-[-10px] rounded-[18px] bg-[#323f5d]`}
               >
-                <p className="font-bold text-[20px] text-white"><Briefcase /></p>
+                <p className="font-bold text-[20px] text-white">
+                  <Briefcase />
+                </p>
               </div>
               <div className="flex-col">
                 <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
@@ -115,43 +128,72 @@ const Advisor = () => {
                 </p>
                 <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
                   Jul. 2020 ~ Aug. 2022 <br />
-                  CRUSER (Consortium for Robotics and Unmanned Systems Education and Research) <br />
-                  <span className="italic">Postdoctoral Researcher; NRC Fellowship</span> <br />
+                  CRUSER (Consortium for Robotics and Unmanned Systems Education
+                  and Research) <br />
+                  <span className="italic">
+                    Postdoctoral Researcher; NRC Fellowship
+                  </span>{" "}
+                  <br />
                 </p>
                 <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
                   Center for Naval Ship Engineering
                 </p>
                 <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
                   Mar. 2020 ~ June. 2020 <br />
-                  Institute of Engineering Research, Seoul National University, Seoul, South Korea <br />
+                  Institute of Engineering Research, Seoul National University,
+                  Seoul, South Korea <br />
                   <span className="italic">Postdoctoral Senior Researcher</span>
                 </p>
               </div>
             </div>
           </div>
 
-        <div className="flex mt-10 grid-cols-2 lg:ml-[-10%] w-full space-x-5 max-sm:space-x-2 justify-center">
-          <Link
-            href="https://www.wschoi.com/curriculum-vitae"
-            type="button"
-            className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#258b5a]/40 rounded-[32px] gap-[12px]"
-          >
-            <ScrollText className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain"/>
-            <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
-               Curriculum Vitae
-            </span>
-          </Link>
-          <Link
-            href="https://scholar.google.com/citations?user=9rpkxUwAAAAJ"
-            type="button"
-            className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#25618B]/60 rounded-[32px] gap-[12px]"
-          >
-            <User className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain"/>
-            <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
-              Google Scholar
-            </span>
-          </Link>
-        </div>
+          <div className="flex flex-wrap mt-10 grid-cols-2 lg:ml-[-10%] w-full space-x-5 max-sm:space-x-2 justify-center">
+            <div>
+              <Link
+                href="https://www.wschoi.com/curriculum-vitae"
+                type="button"
+                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#258b5a]/40 rounded-[32px] gap-[12px]"
+              >
+                <ScrollText className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
+                <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
+                  Curriculum Vitae
+                </span>
+              </Link>
+              <Link
+                href="https://scholar.google.com/citations?user=9rpkxUwAAAAJ"
+                type="button"
+                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#25618B]/60 rounded-[32px] gap-[12px]"
+              >
+                <User className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
+                <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
+                  Google Scholar
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link
+                href="https://github.com/woensug-choi"
+                type="button"
+                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 rounded-[32px] gap-[12px]"
+              >
+                <Github className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
+                <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
+                  Github (Personal)
+                </span>
+              </Link>
+              <Link
+                href="https://github.com/IOES-Lab"
+                type="button"
+                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 rounded-[32px] gap-[12px]"
+              >
+                <Github className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
+                <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
+                  Github (Lab)
+                </span>
+              </Link>
+            </div>
+          </div>
         </motion.div>
       </motion.div>
     </section>

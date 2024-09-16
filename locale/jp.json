@@ -57,6 +57,13 @@
     "Cand2": "募集中",
     "Cand2_mail": "ポジションオープン"
   },
+  "Recruit": {
+    "whattime_link": "https://whattime.co.kr/woensug-choi/30min",
+    "title": "大学院生募集(全額奨学金:学費と生活費)のお知らせ!",
+    "content": "意欲的な研究者志望の皆様へ朗報です。現在、全額奨学金(学費と生活費）付きの大学院プログラムへの応募を受け付けております。学術キャリア向上の機会をお見逃しなく。ご関心のある方は、ぜひご応募ください。",
+    "Make Appointment" : "相談予約する",
+    "Send Email": "メールを送る"
+  },
   "Classes": {
     "typingtext": "| Courses",
     "title": "授業資料",
@@ -81,6 +88,7 @@
   },
   "Footer": {
     "ContactUs": "Contact IOES",
-    "MakeReservation": "相談予約する"
+    "MakeReservation": "相談予約する",
+    "whattime_link": "https://whattime.co.kr/woensug-choi/30min"
   }
 }

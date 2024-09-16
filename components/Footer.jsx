@@ -10,9 +10,17 @@ import headset from "../public/headset.svg";
 import { useTranslations } from "next-intl";
 import { Hand, Mail } from "lucide-react";
 import KMOULogo from "../public/logo.png";
+import { useState, useEffect } from "react";
 
 const Footer = () => {
   const t = useTranslations("Footer");
+
+  const [appointmentUrl, setAppointmentUrl] = useState(
+    "mailto:wschoi@kmou.ac.kr"
+  );
+  useEffect(() => {
+    setAppointmentUrl(t("whattime_link"));
+  }, [t]);
 
   return (
     <motion.footer
@@ -33,7 +41,7 @@ const Footer = () => {
             </p>
           </h4>
           <a
-            href="https://whattime.co.kr/woensug-choi/30min"
+            href={appointmentUrl}
             className="flex items-center h-fit py-4 px-6 bg-[#e953c6] rounded-[32px] gap-[12px]"
           >
             <Hand className="text-white object-contain" />
@@ -43,7 +51,6 @@ const Footer = () => {
           </a>
 
           <div className="flex flex-col">
-
             <div className="mb-[50px] h-[2px] bg-white opacity-10 w-full" />
 
             <div className="flex items-center justify-between flex-wrap gap-4">
