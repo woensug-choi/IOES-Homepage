@@ -25,7 +25,7 @@ const Feedback = () => {
       >
         <TitleText title={t("title")} textStyles="text-center mb-5" />
       </motion.div>
-      <div className="mb-10">
+      <div className="mb-10 lg:min-w-[65%]">
         <Recruit />
       </div>
       <motion.div

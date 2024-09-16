@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
-import { Megaphone, Mail } from "lucide-react";
+import { Megaphone, Mail, Hand } from "lucide-react";
 
 function Recruit() {
   const t = useTranslations("Recruit");
@@ -45,7 +45,7 @@ function Recruit() {
             href={appointmentUrl}
             className="mx-2 mt-5 w-[280px] flex items-center h-fit py-4 px-6 bg-[#e953c6]/30 rounded-[32px] gap-[12px]"
           >
-            <Mail className="text-white object-contain" />
+            <Hand className="text-white object-contain" />
             <span className="font-normal text-[16px] text-white">
               {t("Make Appointment")}
             </span>
