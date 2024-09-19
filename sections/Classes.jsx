@@ -21,25 +21,25 @@ const Classes = () => {
       imgUrl: IntroNaval,
       title: t("Title_IntroNaval"),
       subtitle: t("Explain_IntroNaval"),
-      url: "https://class.wschoi.com"
+      url: "https://class-wschoi.notion.site"
     },
     {
       imgUrl: Dynamics,
       title: t("Title_Dynamics"),
       subtitle: t("Explain_Dynamics"),
-      url: "https://class.wschoi.com"
+      url: "https://class-wschoi.notion.site"
     },
     {
       imgUrl: VibrationEngineering,
       title: t("Title_VibrationEngineering"),
       subtitle: t("Explain_VibrationEngineering"),
-      url: "https://class.wschoi.com"
+      url: "https://class-wschoi.notion.site"
     },
     {
       imgUrl: RoboticsSimulation,
       title: t("Title_RoboticsSimulation"),
       subtitle: t("Explain_RoboticsSimulation"),
-      url: "https://class.wschoi.com"
+      url: "https://class-wschoi.notion.site"
     },
   ];
 
