@@ -186,7 +186,7 @@ const Advisor = () => {
           <div className="flex flex-wrap mt-10 grid-cols-2 lg:ml-[-10%] w-full space-x-5 max-sm:space-x-2 justify-center">
             <div>
               <Link
-                href="https://www.wschoi.com/curriculum-vitae"
+                href="https://lab-wschoi.notion.site/Curriculum-Vitae-c2ed165b5bd14f6d80c0433c00bb1849?pvs=4"
                 type="button"
                 className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#258b5a]/40 rounded-[32px] gap-[12px]"
               >
