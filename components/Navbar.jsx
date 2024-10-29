@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     // NOTE we can declare tags with motion like this for whichever tag we want to animate
-    <nav className={`${styles.xPaddings} max-sm:py-2 py-8 relative`}>
+    <nav className={`${styles.xPaddings} max-sm:py-2 py-8 relative flex justify-center`}>
       <motion.div
         variants={navVariants}
         initial="hidden"
@@ -64,15 +64,15 @@ function Navbar() {
                 <div className="z-50">{t("Contact")}</div>
               </a>
               <div className="flex flex-row ml-2">
-              <a href="/en" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50"><US className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
-              </a>
-              <a href="/jp" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50"><JP className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
-              </a>
-              <a href="/ko" onClick={() => setNavOpen(!navOpen)}>
-                <div className="z-50"><KR className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
-              </a>
+                <a href="/en" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="z-50"><US className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                </a>
+                <a href="/jp" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="z-50"><JP className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                </a>
+                <a href="/ko" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="z-50"><KR className="w-4 h-4 max-sm:mt-0 mt-0.5 mr-2" /></div>
+                </a>
               </div>
             </div>
           </div>
