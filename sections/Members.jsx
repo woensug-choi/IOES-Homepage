@@ -13,7 +13,7 @@ import Recruit from "./Recruit";
 
 // import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
-import LUS from "../public/LUS.jpeg";
+// import LUS from "../public/LUS.jpeg";
 import HJW from "../public/HJW.jpeg";
 import KYS from "../public/KYS.jpeg";
 // import Cand1 from "../public/people-04.jpg";
@@ -91,7 +91,7 @@ const Members = () => {
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
               {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
-              {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))}
+              {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
             </div>
