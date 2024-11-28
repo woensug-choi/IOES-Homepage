@@ -16,6 +16,7 @@ import TYK from "../public/TYK.jpeg";
 // import LUS from "../public/LUS.jpeg";
 import HJW from "../public/HJW.jpeg";
 import KYS from "../public/KYS.jpeg";
+import KMJ from "../public/KMJ.jpeg";
 // import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
