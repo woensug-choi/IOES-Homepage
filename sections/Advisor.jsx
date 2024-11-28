@@ -183,7 +183,7 @@ const Advisor = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap mt-10 grid-cols-2 lg:ml-[-10%] w-full space-x-5 max-sm:space-x-2 justify-center">
+          <div className="flex flex-wrap mt-10 gap-y-5 grid-cols-2 lg:ml-[-10%] w-full space-x-5 max-sm:space-x-2 justify-center">
             <div>
               <Link
                 href="https://lab-wschoi.notion.site/Curriculum-Vitae-c2ed165b5bd14f6d80c0433c00bb1849?pvs=4"
@@ -210,7 +210,7 @@ const Advisor = () => {
               <Link
                 href="https://github.com/woensug-choi"
                 type="button"
-                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 rounded-[32px] gap-[12px]"
+                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 hover:bg-black/30 hover:outline hover:outline-1 hover:outline-black rounded-[32px] gap-[12px]"
               >
                 <Github className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
                 <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
@@ -220,7 +220,7 @@ const Advisor = () => {
               <Link
                 href="https://github.com/IOES-Lab"
                 type="button"
-                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 rounded-[32px] gap-[12px]"
+                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-black/60 hover:bg-black/30 hover:outline hover:outline-1 hover:outline-black rounded-[32px] gap-[12px]"
               >
                 <Github className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
                 <span className="font-normal text-[16px] max-sm:text-sm text-white/80">

@@ -36,7 +36,7 @@ const InsightCard = ({ imgUrl, title, url, subtitle, index }) => {
           </p>
           <a
             href={url}
-            className="hidden max-lg:block mt-5 text-right h-fit w-fit px-4 py-2 text-white bg-[#258b7d]/20 rounded-[32px] gap-[12px]"
+            className="hidden max-lg:block mt-5 text-right h-fit w-fit px-4 py-2 text-white bg-[#258b7d]/20 hover:bg-[#258b7d]/60 rounded-[32px] gap-[12px]"
           >
             <p className="flex">
               <ArrowRight className="text-white object-contain mr-2" />

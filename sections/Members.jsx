@@ -49,12 +49,9 @@ function Person(src, alt, type, name, email, memo_1, memo_2) {
             }`}
           >
             <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 gap-[12px]">
-              <PersonStanding className="w-6 h-6" /> {t(type)}
+              <PersonStanding className="w-4 h-4 mr-[-7px]" /> {t(type)}
             </div>
           </div>
-          {/* <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 bg-[#778b25]/80 rounded-[22px] gap-[12px]">
-                      <PersonStanding className="w-6 h-6" /> {t("undergraduate")}
-                    </div> */}
         </div>
       </div>
       <h1 className="mt-[26px] flex justify-center items-center font-bold text-center text-[24px] text-white leading-[30px]">
@@ -97,7 +94,15 @@ const Members = () => {
           {/* PHD */}
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
-              {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"), t("TYK_memo_1"), t("TYK_memo_2"))}
+              {Person(
+                TYK,
+                "TYK",
+                "master",
+                t("TYK"),
+                t("TYK_mail"),
+                t("TYK_memo_1"),
+                t("TYK_memo_2")
+              )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
