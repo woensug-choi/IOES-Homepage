@@ -169,7 +169,7 @@ const Advisor = () => {
                   <span className="italic">Director</span>
                 </p>
                 <p className="flex-1 ml-[30px] font-bold text-[18px] text-white leading-[32px]">
-                Open Robotics (Google Summer of Codes)
+                Open Robotics (Google Summer of Codes Mentor)
                 </p>
                 <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
                   May. 2024 ~ Nov. 2024 <br />
