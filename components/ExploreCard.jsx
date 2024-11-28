@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "../styles";
 import { fadeIn } from "../utils/motion";
-import search from "../public/search.svg";
+import { ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 // We are getting this "id, imgUrl, title" props from "{...world} spread".
@@ -66,8 +66,14 @@ const ExploreCard = ({
           <p className="font-normal text-[16px] leading-[20px] text-white/80">
             {t(tags)}
           </p>
-          <p className="font-normal mt-5 text-[16px] leading-[20px] text-white uppercase">
-            <a target="_blank" rel="noopener noreferrer" href={link}>{t("learn_more")}{" "}🔎</a>
+          <p className="font-normal mt-5 text-[16px] leading-[20px] uppercase">
+            <a className="flex" target="_blank" rel="noopener noreferrer" href={link}>
+              <ExternalLink className="w-4 h-4 mr-2" color="#fde048"/>
+              <span className="text-yellow-300 hover:underline">
+                {t("learn_more")}
+              </span>{" "}
+              
+            </a>
           </p>
         </div>
       )}

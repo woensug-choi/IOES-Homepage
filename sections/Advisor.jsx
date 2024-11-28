@@ -188,7 +188,7 @@ const Advisor = () => {
               <Link
                 href="https://lab-wschoi.notion.site/Curriculum-Vitae-c2ed165b5bd14f6d80c0433c00bb1849?pvs=4"
                 type="button"
-                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#258b5a]/40 rounded-[32px] gap-[12px]"
+                className="flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#258b5a]/40 hover:bg-[#258b5a]/70 rounded-[32px] gap-[12px]"
               >
                 <ScrollText className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
                 <span className="font-normal text-[16px] max-sm:text-sm text-white/80">
@@ -198,7 +198,7 @@ const Advisor = () => {
               <Link
                 href="https://scholar.google.com/citations?user=9rpkxUwAAAAJ"
                 type="button"
-                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#25618B]/60 rounded-[32px] gap-[12px]"
+                className="mt-5 flex items-center h-fit py-4 px-6 max-sm:px-4 max-sm:py-2 bg-[#25618B]/60 hover:bg-[#25618B]/90 rounded-[32px] gap-[12px]"
               >
                 <User className="w-[24px] h-[24px] max-sm:w-[20px] text-white object-contain" />
                 <span className="font-normal text-[16px] max-sm:text-sm text-white/80">

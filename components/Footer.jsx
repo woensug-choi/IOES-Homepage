@@ -42,7 +42,7 @@ const Footer = () => {
           </h4>
           <a
             href={appointmentUrl}
-            className="flex items-center h-fit py-4 px-6 bg-[#e953c6] rounded-[32px] gap-[12px]"
+            className="flex items-center h-fit py-4 px-6 bg-[#e953c6]/30 hover:bg-[#e953c6]/60 rounded-[32px] gap-[12px]"
           >
             <Hand className="text-white object-contain" />
             <span className="font-normal text-[16px] text-white">
