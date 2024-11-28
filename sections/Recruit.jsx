@@ -25,7 +25,7 @@ function Recruit() {
   return (
     <motion.div
       variants={fadeIn("right", "tween", 0.2, 1)}
-      className="flex-[0.5] lg:min-w-[65%] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative "
+      className="mt-5 flex-[0.5] lg:min-w-[65%] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative "
     >
       <div className="feedback-gradient" />
 

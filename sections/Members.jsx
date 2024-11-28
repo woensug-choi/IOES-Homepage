@@ -82,9 +82,7 @@ const Members = () => {
         >
           <TypingText title={t("typingtext")} />
           <TitleText title={t("title")} />
-
           <Recruit />
-
           <div className="h-[30px]" />
 
           {/* PHD */}
