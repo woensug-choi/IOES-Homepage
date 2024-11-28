@@ -92,6 +92,7 @@ const Members = () => {
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
+              {Person(KMJ, "KMJ", "undergraduate", t("KMJ"), t("KMJ_mail"))}
             </div>
           </motion.div>
 
