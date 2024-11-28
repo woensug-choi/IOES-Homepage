@@ -7,7 +7,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText, TitleText } from "../components";
 import { useTranslations } from "next-intl";
 
-import { PersonStanding } from "lucide-react";
+import { PersonStanding, Mail } from "lucide-react";
 
 import Recruit from "./Recruit";
 
@@ -22,7 +22,7 @@ import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
 // import Cand4 from "../public/people-07.png";
 
-function Person(src, alt, type, name, email) {
+function Person(src, alt, type, name, email, memo_1, memo_2) {
   const t = useTranslations("Members");
   return (
     <div className="flex-1 flex flex-col">
@@ -57,11 +57,19 @@ function Person(src, alt, type, name, email) {
                     </div> */}
         </div>
       </div>
-      <h1 className="mt-[26px] font-bold text-center text-[24px] text-white leading-[30px]">
+      <h1 className="mt-[26px] flex justify-center items-center font-bold text-center text-[24px] text-white leading-[30px]">
         {name}
+        <Mail
+          className="w-4 h-4 ml-2"
+          color="#aeacb0"
+          onClick={() => window.open(`mailto:${email}`)}
+        />
       </h1>
-      <p className="flex-1 mt-1 font-normal text-center text-[12px] text-[#B0B0B0] leading-[32px]">
-        {email}
+      <p className="flex-1 mt-2 font-normal text-center text-[14px] text-[#B0B0B0] ">
+        {memo_1}
+      </p>
+      <p className="flex-1 mt-1 font-normal text-center text-[14px] text-[#B0B0B0] ">
+        {memo_2}
       </p>
     </div>
   );
@@ -89,7 +97,7 @@ const Members = () => {
           {/* PHD */}
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
-              {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"))}
+              {Person(TYK, "TYK", "master", t("TYK"), t("TYK_mail"), t("TYK_memo_1"), t("TYK_memo_2"))}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
