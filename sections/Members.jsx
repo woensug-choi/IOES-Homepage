@@ -17,6 +17,7 @@ import TYK from "../public/TYK.jpeg";
 import HJW from "../public/HJW.jpeg";
 import KYS from "../public/KYS.jpeg";
 import KMJ from "../public/KMJ.jpeg";
+import KCH from "../public/KCH.jpeg";
 // import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
@@ -100,17 +101,28 @@ const Members = () => {
                 "master",
                 t("TYK"),
                 t("TYK_mail"),
-                t("TYK_memo_1"),
+                t("OST"),
                 t("TYK_memo_2")
               )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
-              {Person(HJW, "HJW", "undergraduate", t("HJW"), t("HJW_mail"))}
+              {
+                (Person(HJW, "HJW", "master", t("HJW"), t("HJW_mail"), t("OST")))
+              }
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
               {Person(KMJ, "KMJ", "undergraduate", t("KMJ"), t("KMJ_mail"))}
+              {Person(KCH, "KCH", "undergraduate", t("KCH"), t("KCH_mail"))}
+              {Person(
+                Cand2,
+                "Cand1",
+                "undergraduate",
+                t("Cand1"),
+                t("Cand1_mail")
+              )}
+              {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("left", "tween", 0.4, 1)}
             className="mt-20"
           >
@@ -124,7 +136,7 @@ const Members = () => {
               )}
               {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Alumni */}
           {/* <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
