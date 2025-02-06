@@ -89,7 +89,7 @@ const Members = () => {
         >
           <TypingText title={t("typingtext")} />
           <TitleText title={t("title")} />
-          <Recruit />
+          {/* <Recruit /> */}
           <div className="h-[30px]" />
 
           {/* PHD */}
@@ -118,7 +118,7 @@ const Members = () => {
                 t("Cand1"),
                 t("Cand1_mail")
               )}
-              {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
+              {/* {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))} */}
             </div>
           </motion.div>
 

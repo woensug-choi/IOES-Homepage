@@ -52,7 +52,7 @@ function Navbar() {
             <div className="text-white flex w-full justify-between">
               <div className="flex py-2 pr-4 border-2 border-white/20 rounded-full backdrop-blur-sm max-sm:gap-y-2 flex-row gap-x-2 max-sm:mt-1">
                 <a href="#explore">
-                  <div className="z-50 ml-5 border-r border-white/40 pr-2">{t("Research")}</div>
+                  <div className="z-50 ml-3 border-r border-white/40 pr-2">{t("Research")}</div>
                 </a>
                 <a href="#advisor">
                   <div className="z-50 border-r border-white/40 pr-2">{t("Advisor")}</div>
@@ -61,11 +61,11 @@ function Navbar() {
                   <div className="z-50 border-r border-white/40 pr-2">{t("Members")}</div>
                 </a>
                 <a href="#classes">
-                  <div className="z-50 border-r border-white/40 pr-2">{t("Classes")}</div>
+                  <div className="z-50">{t("Classes")}</div>
                 </a>
-                <a href="#contact">
+                {/* <a href="#contact">
                   <div className="z-50">{t("Contact")}</div>
-                </a>
+                </a> */}
               </div>
               <div className="flex flex-row ml-2 pt-3 max-sm:pr-5 pr-20 mt-0.5">
                 <a href="/en" onClick={() => setNavOpen(!navOpen)}>

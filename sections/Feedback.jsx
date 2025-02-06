@@ -25,11 +25,11 @@ const Feedback = () => {
       >
         <TitleText title={t("title")} textStyles="text-center mb-5" />
       </motion.div>
-      <div
+      {/* <div
         className={`${styles.innerWidth} mb-5 mt-[-20px]`}
       >
         <Recruit />
-      </div>
+      </div> */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"
