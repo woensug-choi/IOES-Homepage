@@ -95,15 +95,6 @@ function Gallery() {
             className="flex overflow-x-auto gap-4 scrollbar-hide w-full"
           >
             {images.map(({ public_id, filename }, index) => (
-              // <Image
-              //   src={public_id}
-              //   key={index}
-              //   alt={filename}
-              //   width="200"
-              //   height="100"
-              //   className="rounded-md cursor-pointer flex-shrink-0"
-              //   onClick={() => openModal({ public_id, filename })}
-              // />
               <GalleryImage
                 key={index}
                 public_id={public_id}

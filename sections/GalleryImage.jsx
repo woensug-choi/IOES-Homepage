@@ -5,7 +5,7 @@ function GalleryImage({ public_id, filename, onClick }) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="relative">
+    <div className="relative flex-shrink-0">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="spinner_small"></div>
