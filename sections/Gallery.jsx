@@ -136,7 +136,9 @@ function Gallery() {
               />
               {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="spinner"></div>
+                  <div className="spinner">
+                    <div className="w-[1200px] h-[1000px]" />
+                  </div>
                 </div>
               )}
               <p className="absolute top-5 left-5 text-white bg-black bg-opacity-75 rounded-lg p-2">
