@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import styles from "../styles";
 import getImages from "../utils/getphoto";
+import GalleryImage from "./GalleryImage";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -36,11 +37,13 @@ function Gallery() {
   }
 
   function openModal(image) {
+    setIsLoading(true);
     setSelectedImage(image);
     setIsModalOpen(true);
   }
 
   function closeModal() {
+    setIsLoading(false);
     setIsModalOpen(false);
     setSelectedImage(null);
   }
@@ -92,13 +95,19 @@ function Gallery() {
             className="flex overflow-x-auto gap-4 scrollbar-hide w-full"
           >
             {images.map(({ public_id, filename }, index) => (
-              <Image
-                src={public_id}
+              // <Image
+              //   src={public_id}
+              //   key={index}
+              //   alt={filename}
+              //   width="200"
+              //   height="100"
+              //   className="rounded-md cursor-pointer flex-shrink-0"
+              //   onClick={() => openModal({ public_id, filename })}
+              // />
+              <GalleryImage
                 key={index}
-                alt={filename}
-                width="200"
-                height="100"
-                className="rounded-md cursor-pointer flex-shrink-0"
+                public_id={public_id}
+                filename={filename}
                 onClick={() => openModal({ public_id, filename })}
               />
             ))}
@@ -154,7 +163,10 @@ function Gallery() {
             <button className="m-2 text-white" onClick={showPrevImage}>
               <ChevronLeft size={50} />
             </button>
-            <p className="text-white font-bold mx-10 cursor-pointer" onClick={closeModal}>
+            <p
+              className="text-white font-bold mx-10 cursor-pointer"
+              onClick={closeModal}
+            >
               Close
             </p>
             <button className="m-2 text-white" onClick={showNextImage}>
