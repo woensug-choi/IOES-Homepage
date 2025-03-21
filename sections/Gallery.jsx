@@ -71,10 +71,14 @@ function Gallery() {
       scrollContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
     }
   }
-
   function handleScrollRight() {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      const maxScrollLeft =
+        scrollContainerRef.current.scrollWidth -
+        scrollContainerRef.current.clientWidth;
+      if (scrollContainerRef.current.scrollLeft < maxScrollLeft) {
+        scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      }
     }
   }
 
