@@ -151,13 +151,13 @@ function Gallery() {
             </button>
           </div>
           <div className="absolute bottom-20 flex items-center lg:hidden justify-center bg-black bg-opacity-75 rounded-xl border-2 border-white/10">
-            <button className="m-4 text-white" onClick={showPrevImage}>
+            <button className="m-2 text-white" onClick={showPrevImage}>
               <ChevronLeft size={50} />
             </button>
             <p className="text-white font-bold mx-10 cursor-pointer" onClick={closeModal}>
               Close
             </p>
-            <button className="m-4 text-white" onClick={showNextImage}>
+            <button className="m-2 text-white" onClick={showNextImage}>
               <ChevronRight size={50} />
             </button>
           </div>
