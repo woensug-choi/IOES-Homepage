@@ -8,7 +8,7 @@ function GalleryImage({ public_id, filename, onClick }) {
     <div className="relative">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="spinner"></div>
+          <div className="spinner_small"></div>
         </div>
       )}
       <Image
