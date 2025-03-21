@@ -7,6 +7,7 @@ import {
   Hero,
   Classes,
   Members,
+  Gallery,
   World,
 } from "../sections";
 
@@ -31,6 +32,7 @@ const Home = () => (
       <Advisor />
       <div className="gradient-04 z-10" />
       <Members />
+      {/* <Gallery /> */}
     </div>
     {/* <World /> */}
     <div className="relative">

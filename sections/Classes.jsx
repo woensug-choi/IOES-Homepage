@@ -44,7 +44,7 @@ const Classes = () => {
   ];
 
   return (
-    <section className={`${styles.paddings} relative z-10`} id="classes">
+    <section className={`${styles.paddings} relative`} id="classes">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

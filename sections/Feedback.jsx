@@ -15,7 +15,7 @@ const Feedback = () => {
   const t = useTranslations("Feedback");
 
   return (
-    <section className={`${styles.paddings} relative z-10`} id="contact">
+    <section className={`${styles.paddings} relative`} id="contact">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

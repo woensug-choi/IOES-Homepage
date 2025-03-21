@@ -58,10 +58,15 @@
     "KMJ_mail": "kmjeong000@gmail.com",
     "KCH": "김초희",
     "KCH_mail": "chkim4895@naver.com",
+    "SMS": "손민석",
+    "SMS_mail": "minsuk073341@naver.com",
     "Cand1": "그대",
     "Cand1_mail": "뭘고민하시나",
     "Cand2": "모집중",
     "Cand2_mail": "자리 있음"
+  },
+  "Gallery": {
+    "title": "사진첩"
   },
   "Recruit": {
     "whattime_link": "https://whattime.co.kr/woensug-choi/30min",

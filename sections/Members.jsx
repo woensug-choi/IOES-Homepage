@@ -9,7 +9,8 @@ import { useTranslations } from "next-intl";
 
 import { PersonStanding, Mail } from "lucide-react";
 
-import Recruit from "./Recruit";
+// import Recruit from "./Recruit";
+import Gallery from "./Gallery";
 
 // import prof from "../public/prof.png";
 import TYK from "../public/TYK.jpeg";
@@ -18,6 +19,7 @@ import HJW from "../public/HJW.jpeg";
 import KYS from "../public/KYS.jpeg";
 import KMJ from "../public/KMJ.jpeg";
 import KCH from "../public/KCH.jpeg";
+import SMS from "../public/SMS.jpeg";
 // import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
@@ -105,12 +107,11 @@ const Members = () => {
                 t("TYK_memo_2")
               )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
-              {
-                (Person(HJW, "HJW", "master", t("HJW"), t("HJW_mail"), t("OST")))
-              }
-              {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
+              {Person(HJW, "HJW", "master", t("HJW"), t("HJW_mail"), t("OST"))}
               {Person(KMJ, "KMJ", "undergraduate", t("KMJ"), t("KMJ_mail"))}
               {Person(KCH, "KCH", "undergraduate", t("KCH"), t("KCH_mail"))}
+              {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
+              {Person(SMS, "SMS", "undergraduate", t("SMS"), t("SMS_mail"))}
               {Person(
                 Cand2,
                 "Cand1",
@@ -167,6 +168,9 @@ const Members = () => {
           />
         </motion.div> */}
       </motion.div>
+      <div className="mt-20">
+        <Gallery />
+      </div>
     </section>
   );
 };
