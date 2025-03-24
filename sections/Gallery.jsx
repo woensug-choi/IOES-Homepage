@@ -97,6 +97,7 @@ function Gallery() {
           <div
             ref={scrollContainerRef}
             className="flex overflow-x-auto gap-4 scrollbar-hide w-full"
+            style={{ overflowX: 'hidden' }}
           >
             {images.map(({ public_id, filename }, index) => (
               <GalleryImage

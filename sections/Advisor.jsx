@@ -25,7 +25,7 @@ const Advisor = () => {
 
   return (
     <section
-      className={`${styles.paddings} relative z-10 lg:ml-[15%]`}
+      className={`${styles.paddings} relative z-20 lg:ml-[15%]`}
       id="advisor"
     >
       <motion.div
