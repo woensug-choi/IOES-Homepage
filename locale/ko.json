@@ -80,8 +80,8 @@
   "Classes": {
     "typingtext": "| Courses",
     "title": "수업자료",
-    "Title_IntroNaval": "조선해양공학개론",
-    "Explain_IntroNaval": "본 수업은 조선해양공학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 조선해양공학의 기본 개념을 다룰 것입니다.",
+    "Title_IntroNaval": "해양공학개론",
+    "Explain_IntroNaval": "본 수업은 해양공학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 해양공학의 기본 개념을 다룰 것입니다.",
     "Title_Dynamics": "동역학",
     "Explain_Dynamics": "본 수업은 동역학의 개론을 제공하기 위해 설계되었습니다. 본 수업은 입자의 운동학, 강체의 운동학, 입자의 운동역학, 강체의 운동역학을 다룰 것입니다.",
     "Title_VibrationEngineering": "진동공학",
