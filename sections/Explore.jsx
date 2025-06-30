@@ -6,7 +6,8 @@ import { staggerContainer } from "../utils/motion";
 import { TypingText, ExploreCard, TitleText } from "../components";
 import { useTranslations } from "next-intl";
 
-import FSI from "../public/FSI.png";
+// import FSI from "../public/FSI.png";
+import SonarObjectRecognition from "../public/SonarObjectRecognition.png";
 import AcousticsUnderwater from "../public/AcousticsUnderwater.png";
 import ROSGazebo from "../public/ROS-Gazebo.png";
 import AutonomousSim from "../public/AutonomousSim.png";
@@ -43,12 +44,12 @@ const Explore = () => {
       link: "https://yeongdocat.notion.site/b0724a1aff334e5eabba40978724b4df?pvs=4",
     },
     {
-      id: "FullStack",
-      imgUrl: Planet_9,
-      title: "FullStackDev",
-      tags: "FullStackDev_tags",
-      category: "Developer",
-      link: "https://yeongdocat.notion.site/e99dd6e088ce4da6af2911777104c1a6?pvs=4",
+      id: "SonarObjectRecognition",
+      imgUrl: SonarObjectRecognition,
+      title: "Developer_4",
+      tags: "Developer_4_tags",
+      category: "Engineer",
+      link: "https://yeongdocat.notion.site/222661362ab28028a214ca8b5a9fb77b",
     },
     {
       id: "AcousticsUnderwater",
@@ -59,13 +60,21 @@ const Explore = () => {
       link: "https://yeongdocat.notion.site/ec653baf1f0e4d02bd04a3e3579c007d?pvs=4",
     },
     {
-      id: "FSI",
-      imgUrl: FSI,
-      title: "Research_2",
-      tags: "Research_2_tags",
-      category: "Research",
-      link: "https://yeongdocat.notion.site/a25c4ded939647d39070d671f819f5c6?pvs=4",
+      id: "FullStack",
+      imgUrl: Planet_9,
+      title: "FullStackDev",
+      tags: "FullStackDev_tags",
+      category: "Developer",
+      link: "https://yeongdocat.notion.site/e99dd6e088ce4da6af2911777104c1a6?pvs=4",
     },
+    // {
+    //   id: "FSI",
+    //   imgUrl: FSI,
+    //   title: "Research_2",
+    //   tags: "Research_2_tags",
+    //   category: "Research",
+    //   link: "https://yeongdocat.notion.site/a25c4ded939647d39070d671f819f5c6?pvs=4",
+    // },
   ];
 
   return (
