@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 
 // import FSI from "../public/FSI.png";
 import SonarObjectRecognition from "../public/SonarObjectRecognition.png";
-import AcousticsUnderwater from "../public/AcousticsUnderwater.png";
+import AcousticsUnderwater from "../public/AcousticsUnderwater.webp";
 import ROSGazebo from "../public/ROS-Gazebo.png";
 import AutonomousSim from "../public/AutonomousSim.png";
 import VirtualWorld from "../public/cesium_omniverse.avif";
