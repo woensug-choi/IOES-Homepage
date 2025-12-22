@@ -107,8 +107,23 @@ const Members = () => {
                 t("TYK_memo_2")
               )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
-              {Person(HJW, "HJW", "master", t("HJW"), t("HJW_mail"), t("OST"))}
-              {Person(KMJ, "KMJ", "undergraduate", t("KMJ"), t("KMJ_mail"))}
+              {Person(
+                HJW,
+                "HJW",
+                "master",
+                t("HJW"),
+                t("HJW_mail"),
+                t("OST"),
+                t("HJW_memo_2")
+              )}
+              {Person(
+                KMJ,
+                "KMJ",
+                "master",
+                t("KMJ"),
+                t("KMJ_mail"),
+                t("OST")
+              )}
               {Person(KCH, "KCH", "undergraduate", t("KCH"), t("KCH_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
               {Person(SMS, "SMS", "undergraduate", t("SMS"), t("SMS_mail"))}
