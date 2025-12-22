@@ -172,7 +172,7 @@ const Advisor = () => {
                 Open Robotics (Google Summer of Codes Mentor)
                 </p>
                 <p className="flex-1 ml-[30px] font-normal text-[14px] text-[#B0B0B0] leading-[22px] mb-4">
-                  May. 2024 ~ Nov. 2024 <br />
+                  May. 2024 ~ Nov. 2025 <br />
                   Physics-based Sonar Simulation for Underwater Robotics <br />
                   <span className="italic">
                   Mentor
