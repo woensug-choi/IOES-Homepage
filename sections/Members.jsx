@@ -45,10 +45,10 @@ function Person(src, alt, type, name, email, memo_1, memo_2) {
               type === "intern"
                 ? "bg-[#a9a998]/80"
                 : type === "undergraduate"
-                ? "bg-[#a9a73f]/80"
-                : type === "master"
-                ? "bg-[#258b5a]/80"
-                : "bg-[#7141af]/80"
+                  ? "bg-[#a9a73f]/80"
+                  : type === "master"
+                    ? "bg-[#258b5a]/80"
+                    : "bg-[#7141af]/80"
             }`}
           >
             <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 gap-[12px]">
@@ -104,7 +104,7 @@ const Members = () => {
                 t("TYK"),
                 t("TYK_mail"),
                 t("OST"),
-                t("TYK_memo_2")
+                t("TYK_memo_2"),
               )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(
@@ -114,16 +114,9 @@ const Members = () => {
                 t("HJW"),
                 t("HJW_mail"),
                 t("OST"),
-                t("HJW_memo_2")
+                t("HJW_memo_2"),
               )}
-              {Person(
-                KMJ,
-                "KMJ",
-                "master",
-                t("KMJ"),
-                t("KMJ_mail"),
-                t("OST")
-              )}
+              {Person(KMJ, "KMJ", "master", t("KMJ"), t("KMJ_mail"), t("OST"))}
               {Person(KCH, "KCH", "undergraduate", t("KCH"), t("KCH_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
               {Person(SMS, "SMS", "undergraduate", t("SMS"), t("SMS_mail"))}
@@ -132,9 +125,9 @@ const Members = () => {
                 "Cand1",
                 "undergraduate",
                 t("Cand1"),
-                t("Cand1_mail")
+                t("Cand1_mail"),
               )}
-              {/* {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))} */}
+              {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
             </div>
           </motion.div>
 
