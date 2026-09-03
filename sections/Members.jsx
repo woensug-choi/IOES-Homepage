@@ -18,7 +18,6 @@ import TYK from "../public/TYK.jpeg";
 import HJW from "../public/HJW.jpeg";
 import KYS from "../public/KYS.jpeg";
 import KMJ from "../public/KMJ.jpeg";
-import KCH from "../public/KCH.jpeg";
 import SMS from "../public/SMS.jpeg";
 // import Cand1 from "../public/people-04.jpg";
 import Cand2 from "../public/people-05.jpg";
@@ -117,7 +116,6 @@ const Members = () => {
                 t("HJW_memo_2"),
               )}
               {Person(KMJ, "KMJ", "master", t("KMJ"), t("KMJ_mail"), t("OST"))}
-              {Person(KCH, "KCH", "undergraduate", t("KCH"), t("KCH_mail"))}
               {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
               {Person(SMS, "SMS", "undergraduate", t("SMS"), t("SMS_mail"))}
               {Person(
