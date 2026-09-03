@@ -43,9 +43,24 @@
     "title": "연구실 멤버",
     "phd": "박사과정",
     "master": "석사과정",
+    "masterCompleted": "석사 졸업",
     "undergraduate": "학부연구생",
     "intern": "단기인턴",
-    "alumni": "졸업생",
+    "alumniTitle": "졸업생",
+    "viewAlumni": "졸업생 보기",
+    "hideAlumni": "졸업생 숨기기",
+    "noAlumni": "등록된 졸업생 정보가 없습니다.",
+    "alumni": [
+      {
+        "name": "김태연",
+        "degree": "M.S.",
+        "period": "",
+        "email": "yncity@naver.com",
+        "affiliation": "OST대학원",
+        "current": "도쿄해양대 유학(2025년)",
+        "completion": "2026년 8월 석사 졸업"
+      }
+    ],
     "TYK": "김태연",
     "TYK_mail": "yncity@naver.com",
     "OST": "OST대학원",

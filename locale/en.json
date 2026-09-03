@@ -43,9 +43,24 @@
     "title": "Our Research Team",
     "phd": "Ph.D. Student",
     "master": "Master Student",
+    "masterCompleted": "Master's Graduate",
     "undergraduate": "Undergraduate",
     "intern": "Inturn",
-    "alumni": "Alumni",
+    "alumniTitle": "Alumni",
+    "viewAlumni": "View Alumni",
+    "hideAlumni": "Hide Alumni",
+    "noAlumni": "No alumni information has been added yet.",
+    "alumni": [
+      {
+        "name": "Tae-Yeon Kim",
+        "degree": "M.S.",
+        "period": "",
+        "email": "yncity@naver.com",
+        "affiliation": "OST Grad School",
+        "current": "Tokyo University of Marine Science and Technology (2025)",
+        "completion": "Graduated with a master's degree in August 2026"
+      }
+    ],
     "TYK": "Tae-Yeon Kim",
     "TYK_mail": "yncity@naver.com",
     "OST": "OST Grad School",

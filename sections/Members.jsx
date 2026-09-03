@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText, TitleText } from "../components";
 import { useTranslations } from "next-intl";
 
-import { PersonStanding, Mail } from "lucide-react";
+import { ChevronDown, ChevronUp, PersonStanding, Mail } from "lucide-react";
 
 // import Recruit from "./Recruit";
 import Gallery from "./Gallery";
@@ -24,8 +25,18 @@ import Cand2 from "../public/people-05.jpg";
 import Cand3 from "../public/people-06.png";
 // import Cand4 from "../public/people-07.png";
 
-function Person(src, alt, type, name, email, memo_1, memo_2) {
-  const t = useTranslations("Members");
+function Person(
+  src,
+  alt,
+  type,
+  name,
+  email,
+  memo_1,
+  memo_2,
+  t,
+  memo_3,
+  typeLabel,
+) {
   return (
     <div className="flex-1 flex flex-col">
       <div className={`${styles.flexCenter} relative`}>
@@ -51,7 +62,8 @@ function Person(src, alt, type, name, email, memo_1, memo_2) {
             }`}
           >
             <div className="flex items-center w-fit text-white/80 h-fit p-1.5 px-3 gap-[12px]">
-              <PersonStanding className="w-4 h-4 mr-[-7px]" /> {t(type)}
+              <PersonStanding className="w-4 h-4 mr-[-7px]" />
+              {typeLabel || t(type)}
             </div>
           </div>
         </div>
@@ -70,12 +82,20 @@ function Person(src, alt, type, name, email, memo_1, memo_2) {
       <p className="flex-1 mt-1 font-normal text-center text-[14px] text-[#B0B0B0] ">
         {memo_2}
       </p>
+      {memo_3 && (
+        <p className="flex-1 mt-1 font-normal text-center text-[14px] text-[#B0B0B0] ">
+          {memo_3}
+        </p>
+      )}
     </div>
   );
 }
 
 const Members = () => {
   const t = useTranslations("Members");
+  const [showAlumni, setShowAlumni] = useState(false);
+  const alumni = t.raw("alumni");
+
   return (
     <section className={`${styles.paddings} relative z-10`} id="members">
       <motion.div
@@ -96,15 +116,6 @@ const Members = () => {
           {/* PHD */}
           <motion.div variants={fadeIn("left", "tween", 0.4, 1)}>
             <div className="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3 gap-y-10">
-              {Person(
-                TYK,
-                "TYK",
-                "master",
-                t("TYK"),
-                t("TYK_mail"),
-                t("OST"),
-                t("TYK_memo_2"),
-              )}
               {/* {Person(LUS, "LUS", "intern", t("LUS"), t("LUS_mail"))} */}
               {Person(
                 HJW,
@@ -114,19 +125,113 @@ const Members = () => {
                 t("HJW_mail"),
                 t("OST"),
                 t("HJW_memo_2"),
+                t,
               )}
-              {Person(KMJ, "KMJ", "master", t("KMJ"), t("KMJ_mail"), t("OST"))}
-              {Person(KYS, "KYS", "undergraduate", t("KYS"), t("KYS_mail"))}
-              {Person(SMS, "SMS", "undergraduate", t("SMS"), t("SMS_mail"))}
+              {Person(
+                KMJ,
+                "KMJ",
+                "master",
+                t("KMJ"),
+                t("KMJ_mail"),
+                t("OST"),
+                undefined,
+                t,
+              )}
+              {Person(
+                KYS,
+                "KYS",
+                "undergraduate",
+                t("KYS"),
+                t("KYS_mail"),
+                undefined,
+                undefined,
+                t,
+              )}
+              {Person(
+                SMS,
+                "SMS",
+                "undergraduate",
+                t("SMS"),
+                t("SMS_mail"),
+                undefined,
+                undefined,
+                t,
+              )}
               {Person(
                 Cand2,
                 "Cand1",
                 "undergraduate",
                 t("Cand1"),
                 t("Cand1_mail"),
+                undefined,
+                undefined,
+                t,
               )}
-              {Person(Cand3, "Cand2", "master", t("Cand2"), t("Cand2_mail"))}
+              {Person(
+                Cand3,
+                "Cand2",
+                "master",
+                t("Cand2"),
+                t("Cand2_mail"),
+                undefined,
+                undefined,
+                t,
+              )}
             </div>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn("left", "tween", 0.4, 1)}
+            className="mt-16 border-t border-white/10 pt-10"
+          >
+            <div className="flex flex-col items-center text-center">
+              <h2 className="font-bold text-[28px] text-white leading-[36px]">
+                {t("alumniTitle")}
+              </h2>
+              <button
+                type="button"
+                aria-expanded={showAlumni}
+                aria-controls="alumni-list"
+                onClick={() => setShowAlumni((isVisible) => !isVisible)}
+                className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white/80 transition-colors hover:border-white/40 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+              >
+                {showAlumni ? t("hideAlumni") : t("viewAlumni")}
+                {showAlumni ? (
+                  <ChevronUp className="h-4 w-4" aria-hidden="true" />
+                ) : (
+                  <ChevronDown className="h-4 w-4" aria-hidden="true" />
+                )}
+              </button>
+            </div>
+
+            {showAlumni && (
+              <div id="alumni-list" className="mt-8">
+                {alumni.length > 0 ? (
+                  <div className="grid grid-cols-4 gap-y-10 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-3">
+                    {alumni.map((person) => (
+                      <div key={`${person.name}-${person.period}`}>
+                        {Person(
+                          TYK,
+                          person.name,
+                          "master",
+                          person.name,
+                          person.email,
+                          person.affiliation,
+                          person.current,
+                          t,
+                          person.completion,
+                          t("masterCompleted"),
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-center text-sm text-[#B0B0B0]">
+                    {t("noAlumni")}
+                  </p>
+                )}
+              </div>
+            )}
           </motion.div>
 
           {/* <motion.div

@@ -43,9 +43,24 @@
     "title": "研究室メンバー",
     "phd": "博士課程",
     "master": "修士課程",
+    "masterCompleted": "修士課程卒業",
     "undergraduate": "学部研究生",
     "intern": "インターン",
-    "alumni": "卒業生",
+    "alumniTitle": "卒業生",
+    "viewAlumni": "卒業生を見る",
+    "hideAlumni": "卒業生を隠す",
+    "noAlumni": "登録された卒業生情報はまだありません。",
+    "alumni": [
+      {
+        "name": "キムテヨン",
+        "degree": "M.S.",
+        "period": "",
+        "email": "yncity@naver.com",
+        "affiliation": "OST大学院",
+        "current": "東京海洋大学留学(2025年)",
+        "completion": "2026年8月 修士課程卒業"
+      }
+    ],
     "TYK": "キムテヨン",
     "TYK_mail": "yncity@naver.com",
     "OST": "OST大学院",
