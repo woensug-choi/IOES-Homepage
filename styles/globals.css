@@ -131,3 +131,72 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+/* Decorative layers must not intercept links or gestures. */
+.gradient-01,
+.gradient-02,
+.gradient-03,
+.gradient-04,
+.feedback-gradient,
+.footer-gradient {
+  pointer-events: none;
+}
+
+/* Soft color without large blurred compositing surfaces on phones. */
+@media (max-width: 639px) {
+  .gradient-01,
+  .gradient-02,
+  .gradient-03,
+  .gradient-04,
+  .feedback-gradient,
+  .footer-gradient {
+    filter: none;
+    transform: none;
+    max-width: 100%;
+    background: radial-gradient(ellipse at center, var(--glow-color), transparent 70%);
+  }
+
+  .gradient-01 { --glow-color: rgba(108, 80, 200, 0.3); }
+  .gradient-02 { --glow-color: rgba(122, 235, 251, 0.15); }
+  .gradient-03 { --glow-color: rgba(149, 66, 232, 0.2); }
+  .gradient-04 { --glow-color: rgba(45, 72, 152, 0.3); }
+  .feedback-gradient { --glow-color: rgba(141, 57, 163, 0.2); }
+  .footer-gradient { --glow-color: rgba(101, 196, 250, 0.15); }
+}
+
+/* Start immediately, remain readable, and release transforms after the entrance. */
+@keyframes hero-text-enter {
+  from { opacity: 0.65; transform: translateY(56px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-line-enter {
+  from { opacity: 0.65; transform: translateX(var(--hero-line-offset, -60px)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hero-cover-enter {
+  from { opacity: 0.75; transform: translateX(12%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hero-stamp-enter {
+  from { opacity: 0.85; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title-enter { animation: hero-text-enter 850ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .hero-text-enter { animation: hero-line-enter 1000ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .hero-text-enter:nth-of-type(2) {
+    --hero-line-offset: 60px;
+    animation-duration: 1150ms;
+  }
+  .hero-text-enter:nth-of-type(3) { animation-duration: 1300ms; }
+  .hero-cover-enter { animation: hero-cover-enter 1100ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .hero-stamp-enter { animation: hero-stamp-enter 450ms ease-out; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto; }
+}

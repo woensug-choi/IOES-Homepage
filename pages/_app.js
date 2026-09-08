@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import "../styles/globals.css";
+import "../styles/hero-font.css";
 
 import localFont from '@next/font/local'
 import Script from 'next/script'
@@ -26,6 +27,8 @@ const nanum = localFont({
     },
   ],
   display: 'swap',
+  // Let CSS request the font weights used on the page instead of preloading all three.
+  preload: false,
 })
 
 import {NextIntlClientProvider} from 'next-intl';

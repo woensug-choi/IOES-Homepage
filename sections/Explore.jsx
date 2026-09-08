@@ -80,10 +80,10 @@ const Explore = () => {
   return (
     <section className={`${styles.paddings} mt-20`} id="explore">
       <motion.div
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title={t("typingtext")} textStyles="text-center" />

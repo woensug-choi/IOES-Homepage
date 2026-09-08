@@ -99,9 +99,10 @@ const Members = () => {
   return (
     <section className={`${styles.paddings} relative z-10`} id="members">
       <motion.div
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
         className={`${styles.innerWidth} flex mx-auto w-full flex-col gap-8`}
       >
         <motion.div

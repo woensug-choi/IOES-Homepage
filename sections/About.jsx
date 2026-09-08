@@ -11,10 +11,10 @@ const t = useTranslations('About');
   <section className={`${styles.paddings} relative z-10 mt-20 -mb-20`} id="about">
     <div className="gradient-02 z-0" />
     <motion.div
-      variants={staggerContainer}
+      variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText title={t('typingtext')} textStyles="text-center" />

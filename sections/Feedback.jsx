@@ -17,10 +17,10 @@ const Feedback = () => {
   return (
     <section className={`${styles.paddings} relative`} id="contact">
       <motion.div
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto lg:flex-row flex flex-col gap-6`}
       >
         <TitleText title={t("title")} textStyles="text-center mb-5" />
@@ -31,10 +31,10 @@ const Feedback = () => {
         <Recruit />
       </div> */}
       <motion.div
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto lg:flex-row flex flex-col gap-6`}
       >
         <motion.div
