@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Match the page canvas and iPhone safe areas to bg-primary-black. */
+html,
+body {
+  background-color: #1A232E;
+}
+
 * {
   margin: 0;
   padding: 0;
