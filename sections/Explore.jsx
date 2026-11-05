@@ -25,7 +25,7 @@ const Explore = () => {
       title: "Developer_3",
       tags: "Developer_3_tags",
       category: "Engineer",
-      link: "https://yeongdocat.notion.site/ba2cc80144c2405a9d764574a06ac850?pvs=4",
+      link: "https://www-posim.vercel.app/",
     },
     {
       id: "ROSGazebo",
@@ -33,7 +33,7 @@ const Explore = () => {
       title: "Developer_1",
       tags: "Developer_1_tags",
       category: "Engineer",
-      link: "https://yeongdocat.notion.site/4db0cfce893a4450ba47bb0277eb856b?pvs=4",
+      link: "https://ioes-lab.github.io/POSIM/ko/",
     },
     {
       id: "AutonomousSim",
